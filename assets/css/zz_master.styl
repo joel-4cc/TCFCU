@@ -1,0 +1,91 @@
+@import 'zy_settings'
+
+//normalize-css()
+//base()
+
+p, h1, h2, h3, h4, h5, h6, span
+	font-family $font-default
+
+//body
+  //padding: 50px
+
+#header
+	position absolute
+	z-index 10
+	background rgba(0,0,0,0.3)
+	width 100%
+	border-bottom 0.5px rgba(255,255,255,0.4) solid
+	height 120px
+	
+	#menu1
+		padding 0
+		
+		div
+			height inherit
+			.bar__module
+				a
+					height inherit
+					display block
+			.menu-horizontal
+				top 0
+				font-size 16px			
+				a
+					color #fff
+					opacity 1
+					&:hover
+						opacity 0.5
+.logo.logo-light
+	max-height 120px
+	top 0
+#home-hero
+	min-height 100vh
+.hamburger-toggle > i	
+	color #fff
+	line-height 100px
+#home-login
+	background #57818A
+	padding 50px 0
+	position absolute
+	bottom 0
+	z-index 10
+	width 100%
+	h2
+		margin 0
+		color #fff
+#icon-nav
+	i
+		margin 20px auto
+	.btn
+		max-width 200px
+		margin 0 auto
+#news-slider
+	.slide-image
+		height 300px
+		background-size cover
+		background-repeat no-repeat
+		background-position center center
+
+
+@media (max-width: 992px) //tablet or small desktop
+	#menu1
+		background #57818a
+		.menu-horizontal a
+			color #fff
+			padding 10px 5px
+		.bar__module
+			margin-bottom 0px
+
+@media (max-width:768px) //mobile
+	.logo.logo-light
+		max-height 100px		
+	#home-hero-content
+		margin-top 120px
+	#header 
+		height 100px
+		.bar
+			padding 0
+		
+@media (min-width: 992px) //larger than medium desktops
+	.menu-horizontal a
+		line-height 120px !important
+		
