@@ -1,6 +1,7 @@
 extends layout
 
 block content
+
 	// - Main Hero Header
 	section#home-hero.cover.height-100.imagebg.parallax.text-center(data-overlay="5")
 		// - background image
@@ -23,7 +24,12 @@ block content
 				//p(style="text-align: center;")
 					a.btn.btn--primary.type--uppercase(href="#")
 						span.btn__text VIEW THE DEMOS
+	
+
+	// - home login
 	include partial/home_login
+	
+
 	// - Icon Navigation
 	section#icon-nav
 		div.container
@@ -44,12 +50,24 @@ block content
 					i.icon.icon--lg.fa.fa-envelope-o
 					a.btn.btn--primary-2.block(href="/contact") 
 						span.btn__text Contact
-	section#news-slider
-		div.row
-			div.slider(data-arrows="true" data-paging="true")
-				ul.slides
-					for post in wordpress.post
-						li.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-xs-12
-							a(href="post/#{post.slug}")
-								div.slide-image(style="background-image:url(#{post.featured_image})")
-								h3.block.text-center= post.title
+
+	// - news slider
+	include partial/_blog_slider
+	
+	// - parallax section
+	section.cover.height-80.imagebg.parallax.text-center(data-overlay="2")
+		// - background image
+		div.background-image-holder(style="background: url(/img/parallax.jpg); opacity: 1;") 
+			//background image for smaller devices
+			img.attachment-full.size-full(width="1600" height="1067" src="/img/parallax.jpg" alt="" srcset="/img/parallax.jpg 1600w, /img/parallax.jpg 300w, /img/parallax.jpg 768w, /img/parallax.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px")
+		div#home-hero-content.container.pos-vertical-center
+			div.row
+				div.col-sm-12
+					iframe(src="https://player.vimeo.com/video/86148358" width="1140" height="641" frameborder="0" title="The Pismo Preserve" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
+	
+	// - "steeve likes us" section
+	div#steeve.row(style="margin:0;")
+		div.col-lg-6.img-responsive.height-50(style="background-image:url(/img/steeve.jpg)")
+		div.text-content.col-lg-6.text-left
+			h1 Steeve Likes Us
+			p When he found himself in a sticky situation, Tulare Federal member Steve Wiliams turned his credit union guidance. What happened next shocked him and turned his troubling time into a true learning opportunity.

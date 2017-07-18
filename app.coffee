@@ -22,7 +22,7 @@ module.exports =
 		wordpress
 			site:'tcfcu1.4cc.co'
 			post_types:
-				post: {template:'views/partial/blog_post.jade'}
+				post: {template:'views/partial/_blog_post.jade'}
 		templates
 			base:'views/templates'
 	]

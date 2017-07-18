@@ -49,7 +49,7 @@ p, h1, h2, h3, h4, h5, h6, span
 	bottom 0
 	z-index 10
 	width 100%
-	h2
+	h1, h2, h3, h4, h5, h6
 		margin 0
 		color #fff
 #icon-nav
@@ -58,14 +58,17 @@ p, h1, h2, h3, h4, h5, h6, span
 	.btn
 		max-width 200px
 		margin 0 auto
-#news-slider
+#blog-slider
 	.slide-image
-		height 300px
-		background-size cover
-		background-repeat no-repeat
-		background-position center center
-
-
+		height 300px !important
+.img-responsive
+	background-size cover
+	background-repeat no-repeat
+	background-position center center
+#steeve
+	.text-content
+		padding 10vh
+		height 50vh
 @media (max-width: 992px) //tablet or small desktop
 	#menu1
 		background #57818a
@@ -74,6 +77,9 @@ p, h1, h2, h3, h4, h5, h6, span
 			padding 10px 5px
 		.bar__module
 			margin-bottom 0px
+	#steeve
+		.text-content
+			padding 25px;
 
 @media (max-width:768px) //mobile
 	.logo.logo-light
@@ -84,6 +90,7 @@ p, h1, h2, h3, h4, h5, h6, span
 		height 100px
 		.bar
 			padding 0
+	
 		
 @media (min-width: 992px) //larger than medium desktops
 	.menu-horizontal a
