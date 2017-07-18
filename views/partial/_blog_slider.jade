@@ -1,9 +1,11 @@
 section#blog-slider
-		div.row
-			div.slider(data-arrows="true" data-paging="true")
-				ul.slides
-					for post in wordpress.post
-						li.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-xs-12
-							a(href="post/#{post.slug}")
-								div.slide-image.img-responsive(style="background-image:url(#{post.featured_image})")
-								h4.block.text-center= post.title 
+	div.row
+		div.slider(data-arrows="true" data-paging="true")
+			ul.slides
+				for slidePost in wordpress.post
+					li.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-xs-12
+						a(href="/post/#{slidePost.slug}")
+							div.slide-image.img-responsive(style="background-image:url(#{slidePost.featured_image})")
+							h4.block.text-center= slidePost.title 
+
+//-p.wordpress-child2= JSON.stringify(wordpress)

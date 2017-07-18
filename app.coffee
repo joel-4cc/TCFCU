@@ -6,6 +6,7 @@ css_pipeline = require 'css-pipeline'
 wordpress    = require 'roots-wordpress'
 templates    = require 'client-templates'
 config       = require 'roots-config'
+records      = require 'roots-records'
 fs           = require 'fs'
 
 
@@ -43,4 +44,11 @@ module.exports =
 	locals:
 		doge:'wow'
 
+	config:
+		wordpress: wordpress
+			site:'tcfcu1.4cc.co'
+			post_types:
+				post: {template:'views/partial/_blog_post.jade'}
 
+
+console.log(module.exports.config.wordpress)

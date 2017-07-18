@@ -14,5 +14,7 @@ html
   body
     include partial/header
     block content
+    //-p.wordpress-layout=JSON.stringify(wordpress)
+    //-!= config_js()
     != js("/")
     //-!= wordpress_js()
