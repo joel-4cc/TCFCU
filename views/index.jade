@@ -1,0 +1,73 @@
+extends layout
+
+block content
+
+	// - Main Hero Header
+	section#home-hero.cover.height-100.imagebg.parallax.text-center(data-overlay="5")
+		// - background image
+		div.background-image-holder(style="background: url(/img/header/home.jpg); opacity: 1;") 
+			//background image for smaller devices
+			img.attachment-full.size-full(width="1600" height="1067" src="/img/header/home.jpg" alt="" srcset="/img/header/home.jpg 1600w, /img/header/home.jpg 300w, /img/header/home.jpg 768w, /img/header/home.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px")
+		div#home-hero-content.container.pos-vertical-center
+			div.row
+				div.col-sm-12
+					h1.text-center Embracing What It Means To Be You
+						//div.wpb_single_image.wpb_content_element.vc_align_center
+						//figure.wpb_wrapper.vc_figure
+							div.vc_single_image-wrapper.vc_box_border_grey
+								img.vc_single_image-img.attachment-full(width="1634" height="448" src="/img/stack/headline-1.png" alt="" srcset="/img/stack/headline-1.png 1634w, /img/stack/headline-1.png 300w, /img/stack/headline-1.png 768w, /img/headline-1.png 1024w" sizes="(max-width: 1634px) 100vw, 1634px")
+			div.vc_empty_space(style="height: 32px")
+				span.vc_empty_space_inner
+			div.wpb_text_column.wpb_content_element
+				div.wpb_wrapper
+					h3(style="text-align: center;") Simple, Personalized Banking
+				//p(style="text-align: center;")
+					a.btn.btn--primary.type--uppercase(href="#")
+						span.btn__text VIEW THE DEMOS
+	
+
+	// - home login
+	include partial/home_login
+	
+
+	// - Icon Navigation
+	section#icon-nav
+		div.container
+			div.row
+				div.col-lg-3.text-center
+					i.icon.icon--lg.fa.fa-money
+					a.btn.btn--primary-2.block(href="/loans") 
+						span.btn__text Loans
+				div.col-lg-3.text-center
+					i.icon.icon--lg.fa.fa-mobile-phone
+					a.btn.btn--primary-2.block(href="/mobile") 
+						span.btn__text Mobile
+				div.col-lg-3.text-center
+					i.icon.icon--lg.fa.fa-thumbs-o-up
+					a.btn.btn--primary-2.block(href="/about") 
+						span.btn__text About
+				div.col-lg-3.text-center
+					i.icon.icon--lg.fa.fa-envelope-o
+					a.btn.btn--primary-2.block(href="/contact") 
+						span.btn__text Contact
+
+	// - news slider
+	include partial/_blog_slider
+	
+	// - parallax section
+	section.cover.height-80.imagebg.parallax.text-center(data-overlay="2")
+		// - background image
+		div.background-image-holder(style="background: url(/img/parallax.jpg); opacity: 1;") 
+			//background image for smaller devices
+			img.attachment-full.size-full(width="1600" height="1067" src="/img/parallax.jpg" alt="" srcset="/img/parallax.jpg 1600w, /img/parallax.jpg 300w, /img/parallax.jpg 768w, /img/parallax.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px")
+		div#home-hero-content.container.pos-vertical-center
+			div.row
+				div.col-sm-12
+					iframe(src="https://player.vimeo.com/video/86148358" width="1140" height="641" frameborder="0" title="The Pismo Preserve" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
+	
+	// - "steeve likes us" section
+	div#steeve.row(style="margin:0;")
+		div.col-lg-6.img-responsive.height-50(style="background-image:url(/img/steeve.jpg)")
+		div.text-content.col-lg-6.text-left
+			h1 Steeve Likes Us
+			p When he found himself in a sticky situation, Tulare Federal member Steve Wiliams turned his credit union guidance. What happened next shocked him and turned his troubling time into a true learning opportunity.
