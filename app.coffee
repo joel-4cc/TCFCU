@@ -42,16 +42,4 @@ module.exports =
 		clean_urls:true
 	
 	locals:
-		doge:'wow'
-		testing: 
-			wordpress
-				
-
-	config:
-		wordpress: wordpress
-			site:'tcfcu1.4cc.co'
-			post_types:
-				post: {template:'views/partial/_blog_post.jade'}
-
-
-##console.log(module.exports.config.wordpress)
+		testing:'testing'
