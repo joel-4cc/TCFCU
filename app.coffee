@@ -21,7 +21,7 @@ module.exports =
 		js_pipeline(files: ['assets/**/*.js','assets/js/*.coffee']),
 		css_pipeline(files: ['assets/**/*.css','assets/css/*.styl'])
 		wordpress
-			site:'tcfcu1.4cc.co'
+			site:'http://tcfcu1.4cc.co'
 			post_types:
 				post: {template:'views/partial/_blog_post.jade'}
 		templates
@@ -43,6 +43,9 @@ module.exports =
 	
 	locals:
 		doge:'wow'
+		testing: 
+			wordpress
+				
 
 	config:
 		wordpress: wordpress
@@ -51,4 +54,4 @@ module.exports =
 				post: {template:'views/partial/_blog_post.jade'}
 
 
-console.log(module.exports.config.wordpress)
+##console.log(module.exports.config.wordpress)

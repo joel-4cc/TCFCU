@@ -9,7 +9,7 @@ block content
 		div#blog-hero-content.container.pos-vertical-center
 			div.row
 				div.col-sm-12
-					h1.text-center= post.title
+					//-h1.text-center= post.title
 			div.vc_empty_space(style="height: 32px")
 				span.vc_empty_space_inner
 			div.wpb_text_column.wpb_content_element
@@ -25,6 +25,6 @@ block content
 					h1.text-center= post.title
 					p= post.content
 
-	//-include _blog_slider
+	include _blog_slider
 	//-p.wordpress-child1=JSON.stringify(config)
 	//-p= JSON.stringify(post)
