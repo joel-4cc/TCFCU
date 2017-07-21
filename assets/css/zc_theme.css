@@ -697,7 +697,7 @@ img {
     }
 
     [data-overlay].bg--primary:before {
-        background: #4a90e2;
+        background: #57818a;
     }
 
 [data-overlay="1"]:before {
@@ -1130,8 +1130,8 @@ div[data-overlay] ul {
 
 .btn--primary,
 .btn--primary:visited {
-    background: #4a90e2;
-    border-color: #4a90e2;
+    background: #57818a;
+    border-color: #57818a;
 }
 
     .btn--primary .btn__text,
@@ -1145,11 +1145,11 @@ div[data-overlay] ul {
         }
 
     .btn--primary:hover {
-        background: #609de6;
+        background: #385960;
     }
 
     .btn--primary:active {
-        background: #3483de;
+        background: #385960;
     }
 
 .btn--primary-1,
@@ -1620,7 +1620,7 @@ input[type="submit"] {
     background: none;
     outline: none;
     border: none;
-    background: #4a90e2;
+    background: #57818a;
     padding: 0.46428571em 2.78571429em 0.46428571em 2.78571429em;
     color: #fff;
 }
@@ -1855,7 +1855,7 @@ div.recaptcha iframe {
         }
 
 .accordion li.active .accordion__title {
-    background: #4a90e2;
+    background: #57818a;
     border-bottom: 1px solid #ececec;
 }
 
@@ -3260,11 +3260,11 @@ body {
 }
 
 .color--primary {
-    color: #4a90e2 !important;
+    color: #57818a !important;
 }
 
 a {
-    color: #4a90e2;
+    color: #57818a;
 }
 
 .color--primary-1 {
@@ -3324,7 +3324,7 @@ a {
 }
 
 .bg--primary {
-    background: #4a90e2;
+    background: #57818a;
 }
 
     .bg--primary p,
@@ -4401,7 +4401,7 @@ section.unpad--top {
 
     .alert.bg--primary {
         background: #fafcfe;
-        border-color: #4a90e2;
+        border-color: #57818a;
     }
 
         .alert.bg--primary .alert__body > span {
@@ -4409,7 +4409,7 @@ section.unpad--top {
         }
 
         .alert.bg--primary .alert__close {
-            color: #4a90e2;
+            color: #57818a;
         }
 
     .alert.alert--dismissed {
@@ -5025,7 +5025,7 @@ pre {
 }
 /*! -- Stack Links -- */
 a {
-    color: #4a90e2;
+    color: #57818a;
     font-weight: 700;
 }
 
@@ -5226,7 +5226,7 @@ hr:first-child {
 
 hr.short {
     width: 2.78571429em;
-    border-color: #4a90e2;
+    border-color: #57818a;
 }
 
 hr[data-title] {
@@ -5409,7 +5409,7 @@ p > .btn {
 }
 
     .bg--primary div:not([class*='feature']) .btn--primary .btn__text {
-        color: #4a90e2;
+        color: #57818a;
     }
 
 .bg--primary > .btn--primary {
@@ -5418,7 +5418,7 @@ p > .btn {
 }
 
     .bg--primary > .btn--primary .btn__text {
-        color: #4a90e2;
+        color: #57818a;
     }
 
 .bg--dark .btn:not(.btn--primary) {
@@ -6595,7 +6595,7 @@ body.dropdowns--hover .nav-sidebar-column .dropdown:hover > .dropdown__container
 }
 
     .checkmark:not([class*='bg-']) {
-        background: #4a90e2;
+        background: #57818a;
     }
 
     .checkmark:before {
@@ -6827,11 +6827,11 @@ p .material-icons {
     }
 
     .bg--primary .boxed:not(.imagebg) a {
-        color: #4a90e2;
+        color: #57818a;
     }
 
     .bg--primary .boxed:not(.imagebg) .color--primary {
-        color: #4a90e2 !important;
+        color: #57818a !important;
     }
 
 @media all and (min-width: 768px) {
@@ -6851,7 +6851,7 @@ p .material-icons {
     bottom: 0;
     width: 100%;
     height: 4px;
-    background: #4a90e2;
+    background: #57818a;
     left: 0;
 }
 
@@ -6889,7 +6889,7 @@ p .material-icons {
 }
 
 .imagebg:not(.image--light) .feature.bg--white a:not(.btn) {
-    color: #4a90e2;
+    color: #57818a;
 }
 
 .imagebg:not(.image--light) .feature.bg--white .label {
@@ -7325,7 +7325,7 @@ a.block:hover > .feature {
     }
 
 .accordion-1 li.active .accordion__title {
-    border-color: #4a90e2;
+    border-color: #57818a;
 }
 
     .accordion-1 li.active .accordion__title span {
@@ -7467,11 +7467,11 @@ a.block:hover > .feature {
         }
 
             .tabs li.active .tab__title {
-                color: #4a90e2;
+                color: #57818a;
             }
 
                 .tabs li.active .tab__title span {
-                    color: #4a90e2;
+                    color: #57818a;
                 }
 
         .tabs li:not(.active) {
@@ -7878,7 +7878,7 @@ a.block:hover > .feature {
 }
 /*! -- Stack Loader -- */
 .loader {
-    border: 3px solid #4a90e2;
+    border: 3px solid #57818a;
     border-radius: 30px;
     height: 30px;
     left: 50%;
@@ -8138,7 +8138,7 @@ a[data-lightbox] {
         height: 100%;
         left: 50%;
         top: 0;
-        background: #4a90e2;
+        background: #57818a;
     }
 
 .process__item {
@@ -8150,7 +8150,7 @@ a[data-lightbox] {
         width: 1.85714286em;
         height: 1.85714286em;
         background: #fff;
-        border: 2px solid #4a90e2;
+        border: 2px solid #57818a;
         border-radius: 50%;
         position: absolute;
         top: 0;
@@ -8234,7 +8234,7 @@ a[data-lightbox] {
         height: 2px;
         top: 0.92857143em;
         left: 0;
-        background: #4a90e2;
+        background: #57818a;
     }
 
 @media all and (max-width: 767px) {
@@ -8267,7 +8267,7 @@ a[data-lightbox] {
             width: 3.71428571em;
             height: 3.71428571em;
             border-radius: 50%;
-            border: 2px solid #4a90e2;
+            border: 2px solid #57818a;
             background: #fff;
             text-align: center;
         }
@@ -8275,7 +8275,7 @@ a[data-lightbox] {
             .process-3 li .process__number span {
                 font-size: 1.35714286em;
                 font-weight: bold;
-                color: #4a90e2;
+                color: #57818a;
                 position: relative;
                 top: 12px;
             }
@@ -8353,7 +8353,7 @@ a[data-lightbox] {
 
     .process-stepper > li.active:before,
     .process-stepper > li.active:after {
-        background: #4a90e2;
+        background: #57818a;
     }
 
     .process-stepper > li > span {
@@ -8553,7 +8553,7 @@ input[type="submit"] {
 
     button[type="submit"].btn--loading:after,
     input[type="submit"][type="submit"].btn--loading:after {
-        background: #4a90e2;
+        background: #57818a;
     }
 
 .bg--primary button.btn {
@@ -8566,8 +8566,8 @@ input[type="submit"] {
     }
 
     .bg--primary button.btn.btn--primary {
-        color: #4a90e2;
-        border-color: #4a90e2;
+        color: #57818a;
+        border-color: #57818a;
     }
 
     .bg--primary button.btn.btn--primary-1 {
@@ -8673,7 +8673,7 @@ label {
         }
 
         .input-checkbox label:hover {
-            border-color: #4a90e2;
+            border-color: #57818a;
         }
 
         .input-checkbox label:before {
@@ -8683,7 +8683,7 @@ label {
             position: absolute;
             width: 100%;
             height: 100%;
-            border: 1px solid #4a90e2;
+            border: 1px solid #57818a;
             opacity: 0;
             transition: 0.3s ease;
             -webkit-transition: 0.3s ease;
@@ -8691,8 +8691,8 @@ label {
         }
 
     .input-checkbox input:checked + label {
-        border-color: #4a90e2;
-        background: #4a90e2;
+        border-color: #57818a;
+        background: #57818a;
     }
 
         .input-checkbox input:checked + label:after {
@@ -8752,7 +8752,7 @@ label {
     }
 
     .input-checkbox.input-checkbox--switch label:hover:before {
-        border-color: #4a90e2;
+        border-color: #57818a;
     }
 
 .input-checkbox.input-checkbox--switch input:checked + label {
@@ -8761,8 +8761,8 @@ label {
 
     .input-checkbox.input-checkbox--switch input:checked + label:before {
         animation: none !important;
-        background: #4a90e2;
-        border-color: #4a90e2;
+        background: #57818a;
+        border-color: #57818a;
         transform: translateX(1.85714286em);
     }
 
@@ -8790,7 +8790,7 @@ label {
 }
 
     .input-radio label:hover {
-        border-color: #4a90e2;
+        border-color: #57818a;
     }
 
     .input-radio label:before {
@@ -8799,7 +8799,7 @@ label {
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        border: 1px solid #4a90e2;
+        border: 1px solid #57818a;
         transition: 0.3s ease;
         -webkit-transition: 0.3s ease;
         -moz-transition: 0.3s ease;
@@ -8808,8 +8808,8 @@ label {
     }
 
 .input-radio input:checked + label {
-    border-color: #4a90e2;
-    background-color: #4a90e2;
+    border-color: #57818a;
+    background-color: #57818a;
 }
 
     .input-radio input:checked + label:after {
@@ -8840,12 +8840,12 @@ label {
 }
 
 .input-radio--innerlabel:hover {
-    border-color: #4a90e2;
+    border-color: #57818a;
 }
 
 .input-radio--innerlabel input:checked + label {
-    border-color: #4a90e2;
-    background: #4a90e2;
+    border-color: #57818a;
+    background: #57818a;
     color: #fff;
 }
 
@@ -8878,7 +8878,7 @@ label {
     }
 
         .bg--primary .input-radio--innerlabel.checked label {
-            color: #4a90e2;
+            color: #57818a;
         }
 
 .bg--primary-1 .input-radio--innerlabel {
@@ -8925,11 +8925,11 @@ label {
     }
 
     .input-select:focus:after {
-        border-color: #4a90e2;
+        border-color: #57818a;
     }
 
     .input-select select:focus {
-        border-color: #4a90e2;
+        border-color: #57818a;
     }
 
 .input-number {
@@ -8970,7 +8970,7 @@ label {
         }
 
             .input-number .input-number__controls > span:hover {
-                color: #4a90e2;
+                color: #57818a;
             }
 
         .input-number .input-number__controls .input-number__increase {
@@ -9111,12 +9111,12 @@ label {
     }
 
         .picker .picker__day.picker__day--highlighted {
-            color: #4a90e2;
+            color: #57818a;
             font-weight: 600;
         }
 
         .picker .picker__day:hover {
-            color: #4a90e2;
+            color: #57818a;
         }
 
     .picker:not(.picker--opened) {
@@ -9665,7 +9665,7 @@ iframe[src*='google.com/maps'] {
                 }
 
                 .masonry-filter-holder:not(.masonry-filters--horizontal) .masonry__filters ul li.active {
-                    color: #4a90e2;
+                    color: #57818a;
                     cursor: pointer;
                 }
 
@@ -9683,7 +9683,7 @@ iframe[src*='google.com/maps'] {
                     }
 
                 .masonry-filter-holder:not(.masonry-filters--horizontal) .masonry__filters ul li:hover {
-                    color: #4a90e2;
+                    color: #57818a;
                 }
 
             .masonry-filter-holder:not(.masonry-filters--horizontal) .masonry__filters ul:hover li.active:after {
@@ -9730,7 +9730,7 @@ iframe[src*='google.com/maps'] {
             }
 
             .masonry-filters--horizontal .masonry__filters ul li.active {
-                color: #4a90e2;
+                color: #57818a;
             }
 
             .masonry-filters--horizontal .masonry__filters ul li:not(.active) {
@@ -10455,7 +10455,7 @@ section.unpad > article .imagebg + div {
     .wizard > .actions a,
     .wizard > .actions a:hover,
     .wizard > .actions a:active {
-        background: #4a90e2;
+        background: #57818a;
         transition: all .3s ease;
         padding: 0.46428571em 1.85714286em;
         font-size: 12px;
@@ -10512,7 +10512,7 @@ section.unpad > article .imagebg + div {
 
     .wizard > .steps li.current a:after,
     .wizard > .steps li.current a:before {
-        background-color: #4a90e2;
+        background-color: #57818a;
     }
 
     .wizard > .steps a,
