@@ -1,12 +1,12 @@
 extends layout
 
 block content
-	section.cover.height-50.imagebg.parallax.text-center(data-overlay="5")
+	section#hero-cover.cover.height-50.imagebg.parallax.text-center(data-overlay="5")
 		//- background image
 		div.background-image-holder(style="background-image: url(/img/header/loans-recreational.jpg); background-position:center bottom; opacity: 1;") 
 			//-background image for smaller devices
 			img.attachment-full.size-full(width="1600" height="1067" src="/img/header/loans-recreational.jpg" alt="" srcset="/img/header/loans-recreational.jpg 1600w, /img/header/loans-recreational.jpg 300w, /img/header/loans-recreational.jpg 768w, /img/header/loans-recreational.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px")
-		div#home-hero-content.container.pos-vertical-center
+		div#hero-content.container.pos-vertical-center
 			div.row
 				div.col-sm-12
 					h1.text-center Recreational Loans
@@ -27,16 +27,17 @@ block content
 						Call us at 559-686-1791 to find out how much you can save today!
 					
 					
-
+			div.row.text-center
+				
 				div.col-md-6
-					a.btn.btn--primary-2.block
+					a.btn.btn--primary-2
 						span.btn__text Compare Plans
 
 				div.col-md-6
-					a.btn.btn--primary-2.block
+					a.btn.btn--primary-2
 						span.btn__text Apply Now
 
-			hr.bg--dark
+			hr
 			
 			div.row
 
