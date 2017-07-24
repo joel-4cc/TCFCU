@@ -1,4 +1,6 @@
 .DS_Store
-node_modules
-!node_mdoules/roots-wordpress
+
+node_modules/*
+!node_mdoules/roots-wordpress/
+
 public
