@@ -2,7 +2,7 @@
   "name": "-t-c-f-c-u",
   "description": "TCFCU Site",
   "dependencies": {
-    "roots" : "*"
+    "roots" : "*",
     "autoprefixer-stylus": "0.9.x",
     "axis": "0.6.x",
     "bootstrap": "^3.3.7",
