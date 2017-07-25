@@ -13,7 +13,6 @@
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "1.x",
     "marked": "0.3.x",
-    "nodemailer": "^4.0.1",
     "roots": "*",
     "roots-config": "0.0.2",
     "roots-records": "^0.5.1",
