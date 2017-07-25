@@ -8,6 +8,7 @@ templates    = require 'client-templates'
 config       = require 'roots-config'
 records      = require 'roots-records'
 fs           = require 'fs'
+nodemailer   = require 'nodemailer'
 
 
 ##fs.readdir 'views/pages', (err, data) ->
@@ -43,3 +44,5 @@ module.exports =
 	
 	locals:
 		testing:'testing'
+		
+		
