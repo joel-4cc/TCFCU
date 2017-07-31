@@ -11,7 +11,8 @@ p
 	font-family $openSans
 	color #404040
 	font-size 0.8em
-
+input
+	font-size 0.8em
 ::selection 
 	background #57818a /* WebKit/Blink Browsers */
 	color #fff
@@ -45,7 +46,7 @@ a.btn
 	margin 20px auto 
 
 hr 
-	margin 3em auto
+	margin 5em auto
 	border-color rgba(87, 129, 138,0.4)
 	//opacity 0.4
 
@@ -56,7 +57,11 @@ hr
 
 .map-container
 	min-height 500px
-	
+ul.tabs
+	margin 3em auto
+	border none
+	text-align center
+	width 100%
 	
 //#hero-cover
 
@@ -109,8 +114,8 @@ table
 
 // ---- footer
 
-#footer
-	background-color #525252
+//#footer
+	//background-color #525252
 
 
 // ---- Partials
@@ -137,7 +142,7 @@ table
 	min-height 100vh
 .hamburger-toggle > i	
 	color #fff
-	line-height 100px
+	//line-height 100px
 
 #icon-nav
 	i
@@ -155,12 +160,12 @@ table
 // ---- media queries
 
 
-@media (max-height: 730px) 
-	#hero-cover
-		padding 9em 0 1em 0
+
 
 
 @media (max-width: 992px) //tablet or small desktop
+	img.logo.logo-light
+		margin 0 auto
 	#menu1
 		background #57818a
 		
@@ -183,13 +188,16 @@ table
 	img
 		margin 0 auto
 		display block
+	#home-login
+		position relative
 
 @media (max-width:768px) //mobile
 	.logo.logo-light
 		max-height 100px	
-		margin-bottom 20px	
+		margin-bottom 20px !important
+		max-width 90%
 	#home-hero-content
-		margin-top 120px
+		top 125px
 	#home-login
 		input
 			margin 0 0 20px 0
@@ -197,3 +205,10 @@ table
 		//height 100px
 		.bar
 			padding 0
+	
+@media (max-height: 730px) 
+	#hero-cover
+		padding 9em 0 1em 0
+@media (max-height: 600px)
+	#home-hero-content
+		top 60px
