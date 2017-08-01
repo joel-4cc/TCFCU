@@ -5,26 +5,34 @@
 
 h1, h2, h3, h4, h5, h6, span, .h1, .h2, .h3, .h4, .h5, .h6
 	font-family $garamond
-	color #404040
+	color $gray
 
 p
 	font-family $openSans
-	color #404040
+	color $gray
 	font-size 0.8em
 input
 	font-size 0.8em
 ::selection 
-	background #57818a /* WebKit/Blink Browsers */
+	background $navy /* WebKit/Blink Browsers */
 	color #fff
 
 ::-moz-selection
-	background: #57818a /* Gecko Browsers */
+	background: $navy /* Gecko Browsers */
 	color #fff
 
   
 
 
 // ---- misc
+
+.btn--primary-2
+	background-color $navy !important
+	background $navy !important
+	border none !important
+	border-radius 0px !important
+.btn--primary-2:hover
+	background-color $navyHover
 
 .img-responsive
 	background-size cover
@@ -33,7 +41,7 @@ input
 .icon 
 	margin 20px auto
 .tabs li.active .tab__title span
-	color #57818a
+	color $navy
 	
 .margin-bottom-30
 	margin-bottom 30px
@@ -74,7 +82,7 @@ table
 		tr
 			th 
 				text-align center
-				background-color #57818a
+				background-color $navy
 				color #fff
 	tbody
 		tr:nth-child(even)
@@ -104,8 +112,8 @@ table
 				top 0
 				font-size 16px			
 				a
-					color #57818a
-					padding 10px
+					color $navy
+					padding 20px 10px
 					opacity 1
 					display block
 					&:hover
@@ -143,13 +151,13 @@ table
 #home-hero, #hero-cover
 	min-height 80vh
 .hamburger-toggle > i	
-	color #fff
+	color $navy
 	//line-height 100px
 
 #icon-nav
 	i
 		margin 20px auto
-		color #57818a
+		color $navy
 		font-size 3em
 	.btn
 		max-width 200px
@@ -171,7 +179,7 @@ table
 	img.logo.logo-light
 		margin 0 auto
 	#menu1
-		background #57818a
+		//background $navy
 		
 		.float-right
 			float none
