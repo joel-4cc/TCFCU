@@ -1,3 +1,5 @@
+
+
 div#header.nav-container
 	div
 		div.bar.bar--sm.visible-xs.bar--transparent
@@ -12,12 +14,12 @@ div#header.nav-container
 						a.hamburger-toggle(href="#" data-toggle-class="#menu1;hidden-xs hidden-sm")
 							i.icon.icon--sm.stack-interface.stack-menu
 		nav#menu1.bar.bar-1.hidden-xs.bar--transparent
-			div.container
-				div.row.text-center
+				//-div.container
+				//-div.row
 					//- header logo
-					div.col-sm-12.float-left
-						a(href="/") 
-							img.logo.logo-light.hidden-xs(alt="logo" src="/img/logo/favicon_blue.png")
-						//- Main navigation
-						div.block
-							include navigation
+				//-div.col-sm-2.float-left
+				a(href="/") 
+					img.logo.logo-light.hidden-xs(alt="logo" src="/img/logo/favicon_blue.png")
+				//- Main navigation
+				//-div.col-sm-10.float-left
+				include navigation
