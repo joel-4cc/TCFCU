@@ -46,6 +46,9 @@ module.exports =
 				About:
 					id: 'aboutPage'
 					template: 'views/partial/_cf_post.jade'
+				Products:
+					id: 'productsAndServices'
+					template: 'views/partial/_cf_post.jade'
 	]
 	
 	stylus:
