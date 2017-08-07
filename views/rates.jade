@@ -17,8 +17,10 @@ block content
 
 			div#loan-rates.row.margin-bottom-30.text-center
 				div.col-md-12
-					h4.color--primary EFFECTIVE FEBRUARY 1, 2017
-					table.table--alternate-row
+					h4.color--primary= contentful.Rates[0].loanRatesEffective
+					//-EFFECTIVE August 1, 2017
+					!=contentful.Rates[0].loanRates
+					//-table.table--alternate-row
 						thead
 							tr
 								th Loan Type
@@ -348,7 +350,8 @@ block content
 					
 					h4.color--primary Credit Cards
 
-					table.table--alternate-row
+					!=contentful.Rates[0].creditCardTypes
+					//-table.table--alternate-row
 						thead
 							tr
 								th Credit Card Types
@@ -377,7 +380,8 @@ block content
 								td 15.90%
 								td
 									a Apply Now
-					table.table--alternate-row
+					!=contentful.Rates[0].lineOfCredit
+					//-table.table--alternate-row
 						thead
 							tr
 								th Type
@@ -401,10 +405,11 @@ block content
 
 				div.col-md-12
 					h4.color--primary Savings Rates
-					p.
-						Effective June 4, 2010
+					p= contentful.Rates[0].savingsRatesEffective
+					//- EFFECTIVE August 1, 2017
 
-					table.table-alternate-row
+					!=contentful.Rates[0].savingsRates
+					//-table.table-alternate-row
 						thead
 							tr
 								th Account
@@ -468,10 +473,11 @@ block content
 
 				div.col-md-12
 					h4.color--primary Share and IRA Certificates
-					p.
-						Effective March 1, 2017
+					p= contentful.Rates[0].iraRatesEffective
+					//- EFFECTIVE August 1, 2017
 
-					table.table--alternate-row
+					!=contentful.Rates[0].sHareAndIraCertificates
+					//-table.table--alternate-row
 						thead
 							tr
 								th Account

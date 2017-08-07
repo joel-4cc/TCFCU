@@ -8,7 +8,7 @@ templates    = require 'client-templates'
 config       = require 'roots-config'
 records      = require 'roots-records'
 fs           = require 'fs'
-
+contentful   = require 'roots-contentful'
 
 ##fs.readdir 'views/pages', (err, data) ->
 ##    navfiles.push(data)
@@ -26,6 +26,20 @@ module.exports =
 				post: {template:'views/partial/_blog_post.jade'}
 		templates
 			base:'views/templates'
+		contentful
+			access_token: 'e75ea3d56e9c47e422e060239a57fa84d6e0dea64478f3edae4e674f65308a60'
+			space_id: 'kzkzhu5buy40'
+			content_types:
+				Rates:
+					id: 'loanRates'
+					template: 'views/partial/_cf_post.jade'
+					##filters: { 'fields.environment[in]': ['staging', 'production'] }
+					##path: (e) -> "blogging/#{e.category}/#{slugify(e.title)}"
+					##write: 'data.json'
+					##sort: compareFunction
+					##transform: transformFunction
+				##press_links:
+				##	id: 'xxxxxx'
 	]
 	
 	stylus:

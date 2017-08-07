@@ -2,7 +2,7 @@ extends layout
 
 
 block content
-
+	- var blogPosts = 3;
 	//- Main Hero Header
 	section#home-hero.cover.height-80.imagebg.parallax.text-center(data-overlay="5")
 		//- background image
@@ -53,7 +53,16 @@ block content
 						span.btn__text Contact
 
 	//- news slider
-	include partial/_blog_slider
+	section#news-title
+		div.container
+				div.row
+					div.col-lg-12.text-center
+						h2.text-center.color--primary Latest News
+		include partial/_blog_slider
+		div.container
+			div.row.text-center
+					a.btn.btn--primary-2(href="/all-posts") 
+						span.btn__text View More
 	
 	//- parallax section
 	section.text-center

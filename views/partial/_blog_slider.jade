@@ -1,4 +1,4 @@
-section#blog-slider
+//-section#blog-slider
 	div.container
 		div.row
 			h2.text-center.color--primary Latest News
@@ -9,5 +9,20 @@ section#blog-slider
 							a(href="/post/#{slidePost.slug}")
 								div.slide-image.img-responsive(style="background-image:url(#{slidePost.featured_image})")
 								h4.color--primary.block.text-center= slidePost.title 
+
+
+
+
+div#blog-slider.container.mt--3.mb--2
+	div.row
+		//-h2.text-center.color--primary News
+		ul
+			- if (blogPosts === undefined){blogPosts = wordpress.post.length;}
+			- for (var i=0; i<blogPosts; i++)
+				li.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-xs-12
+					a(href="/post/#{wordpress.post[i].slug}")
+						div.slide-image.img-responsive(style="background-image:url(#{wordpress.post[i].featured_image})")
+						h4.color--primary.block.text-center= wordpress.post[i].title 
+	
 
 	//-p.wordpress-child2= JSON.stringify(wordpress)
