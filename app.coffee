@@ -49,6 +49,9 @@ module.exports =
 				Products:
 					id: 'productsAndServices'
 					template: 'views/partial/_cf_post.jade'
+				Footer:
+					id: 'footer'
+					template: 'views/partial/_cf_post.jade'
 	]
 	
 	stylus:
