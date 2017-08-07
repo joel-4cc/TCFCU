@@ -12,7 +12,7 @@ block content
 		div#home-hero-content.container.pos-vertical-center
 			div.row
 				div.col-sm-12
-					h1.text-center Embracing What It Means To Be You
+					h1.text-center= contentful.Home[0].headerText
 						//-div.wpb_single_image.wpb_content_element.vc_align_center
 						//-figure.wpb_wrapper.vc_figure
 							div.vc_single_image-wrapper.vc_box_border_grey
@@ -21,7 +21,7 @@ block content
 				span.vc_empty_space_inner
 			div.wpb_text_column.wpb_content_element
 				div.wpb_wrapper
-					h3(style="text-align: center;") Simple, Personalized Banking
+					h3(style="text-align: center;")= contentful.Home[0].headerSubtext
 					
 				//-p(style="text-align: center;")
 					a.btn.btn--primary.type--uppercase(href="#")
@@ -69,7 +69,8 @@ block content
 		div.container
 			div.row
 				div.col-sm-12
-					iframe(src="https://player.vimeo.com/video/86148358" width="1140" height="641" frameborder="0" title="The Pismo Preserve" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
+					!= contentful.Home[0].homePageVideo
+					//-iframe(src="https://player.vimeo.com/video/86148358" width="1140" height="641" frameborder="0" title="The Pismo Preserve" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
 
 	//- "steeve likes us" section
 	div#steeve.row(style="margin:0;")
@@ -77,5 +78,7 @@ block content
 			div.row
 				div.col-lg-6.img-responsive.height-50(style="background-image:url(/img/steeve.jpg)")
 				div.text-content.col-lg-6.text-left
-					h1.color--primary Steeve Likes Us
-					p When he found himself in a sticky situation, Tulare Federal member Steve Wiliams turned his credit union guidance. What happened next shocked him and turned his troubling time into a true learning opportunity.
+					h1.color--primary= contentful.Home[0].storyTitle
+					//-Steeve Likes Us
+					p= contentful.Home[0].storyContent
+					//- When he found himself in a sticky situation, Tulare Federal member Steve Wiliams turned his credit union guidance. What happened next shocked him and turned his troubling time into a true learning opportunity.

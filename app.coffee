@@ -40,6 +40,12 @@ module.exports =
 					##transform: transformFunction
 				##press_links:
 				##	id: 'xxxxxx'
+				Home:
+					id: 'homePage'
+					template: 'views/partial/_cf_post.jade'
+				About:
+					id: 'aboutPage'
+					template: 'views/partial/_cf_post.jade'
 	]
 	
 	stylus:
