@@ -18,6 +18,7 @@ html
 		!= css("/")
 
 	body
+		//-div#testing-bg
 		include partial/header
 		block content
 		include partial/footer
@@ -25,3 +26,4 @@ html
 			span.btn__text TEST
 		//-!= config_js()
 		!= js("/")
+		//-p= TESTING

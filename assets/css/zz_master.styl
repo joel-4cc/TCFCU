@@ -5,26 +5,46 @@
 
 h1, h2, h3, h4, h5, h6, span, .h1, .h2, .h3, .h4, .h5, .h6
 	font-family $garamond
-	color #404040
+	color $gray
+	font-weight bold
+	margin-bottom 10px
 
 p
 	font-family $openSans
-	color #404040
+	color $gray
 	font-size 0.8em
 input
 	font-size 0.8em
 ::selection 
-	background #57818a /* WebKit/Blink Browsers */
+	background $navy /* WebKit/Blink Browsers */
 	color #fff
 
 ::-moz-selection
-	background: #57818a /* Gecko Browsers */
+	background: $navy /* Gecko Browsers */
 	color #fff
 
   
 
 
 // ---- misc
+// #testing-bg
+// 	height 100%
+// 	width 100%
+// 	position fixed
+// 	z-index 0
+// 	opacity .1
+// 	background-image url("/img/header/loans-solar.jpg")
+// 	background-position center center
+// 	background-repeat no-repeat
+// 	background-size cover
+// 	background-attachment fixed
+.btn--primary-2
+	background-color $navy !important
+	background $navy !important
+	border none !important
+	border-radius 0px !important
+.btn--primary-2:hover
+	background-color $navyHover
 
 .img-responsive
 	background-size cover
@@ -33,7 +53,7 @@ input
 .icon 
 	margin 20px auto
 .tabs li.active .tab__title span
-	color #57818a
+	color $navy
 	
 .margin-bottom-30
 	margin-bottom 30px
@@ -74,7 +94,7 @@ table
 		tr
 			th 
 				text-align center
-				background-color #57818a
+				background-color $navy
 				color #fff
 	tbody
 		tr:nth-child(even)
@@ -87,31 +107,36 @@ table
 #header
 	position absolute
 	z-index 10
-	background rgba(0,0,0,0.3)
+	background rgba(255,255,255,1)
 	width 100%
 	border-bottom 0.5px rgba(255,255,255,0.4) solid
 	//height 120px
 	
 	#menu1
 		padding 0
-		div
-			height inherit
-			.bar__module
-				a
-					height inherit
-					display block
-			.menu-horizontal
-				top 0
-				font-size 16px			
-				a
-					color #fff
-					opacity 1
-					&:hover
-						opacity 0.5
+		
+		.bar__module
+			a
+				height inherit
+				display block
+		.menu-horizontal
+			top 0
+			font-size 16px			
+			a
+				color $navy !important
+				padding 20px 10px
+				opacity 1
+				display block
+				&:hover
+					opacity 0.5
 .logo.logo-light
 	max-height 120px
 	top 0
-
+#login-button
+	position absolute
+	top 30px
+	right 20px
+	z-index 20
 // ---- footer
 
 //#footer
@@ -120,7 +145,7 @@ table
 
 // ---- Partials
 #home-login
-	background #57818A
+	//background #57818A
 	padding 20px 0 30px 0
 	position absolute
 	bottom 0
@@ -134,19 +159,23 @@ table
 #blog-slider
 	.slide-image
 		height 300px !important
+	li
+		list-style-type none
 		
 
 
 // ---- Home page
-#home-hero
-	min-height 100vh
+#home-hero, #hero-cover
+	min-height 80vh
 .hamburger-toggle > i	
-	color #fff
+	color $navy
 	//line-height 100px
 
 #icon-nav
 	i
 		margin 20px auto
+		color $navy
+		font-size 3em
 	.btn
 		max-width 200px
 		margin 0 auto
@@ -167,13 +196,13 @@ table
 	img.logo.logo-light
 		margin 0 auto
 	#menu1
-		background #57818a
+		//background $navy
 		
 		.float-right
 			float none
 		.menu-horizontal a
-			color #fff
-			padding 10px 5px
+			color $gray
+			//padding 10px 5px
 		.bar__module
 			margin-bottom 0px
 	#steeve
@@ -188,8 +217,10 @@ table
 	img
 		margin 0 auto
 		display block
-	#home-login
-		position relative
+	#login-button
+		right 20px
+	// #home-login
+	// 	position relative
 
 @media (max-width:768px) //mobile
 	.logo.logo-light
@@ -205,10 +236,23 @@ table
 		//height 100px
 		.bar
 			padding 0
-	
+	#mobile-hamburger
+		float right !important
+	#mobile-logo
+		float left !important
+	#login-button
+		position relative
+		right 0px
+		left 0px
+		top 0px
+		width 100%
+
+@media (max-height: 900px) 
+	#home-hero, #hero-cover
+		min-height 100vh
 @media (max-height: 730px) 
 	#hero-cover
 		padding 9em 0 1em 0
 @media (max-height: 600px)
 	#home-hero-content
-		top 60px
+		top 95px

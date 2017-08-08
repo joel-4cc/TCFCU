@@ -17,8 +17,10 @@ block content
 
 			div#loan-rates.row.margin-bottom-30.text-center
 				div.col-md-12
-					h4.color--primary EFFECTIVE FEBRUARY 1, 2017
-					table.table--alternate-row
+					h4.color--primary= contentful.Rates[0].loanRatesEffective
+					//-EFFECTIVE August 1, 2017
+					!=contentful.Rates[0].loanRates
+					//-table.table--alternate-row
 						thead
 							tr
 								th Loan Type
@@ -348,7 +350,8 @@ block content
 					
 					h4.color--primary Credit Cards
 
-					table.table--alternate-row
+					!=contentful.Rates[0].creditCardTypes
+					//-table.table--alternate-row
 						thead
 							tr
 								th Credit Card Types
@@ -377,7 +380,8 @@ block content
 								td 15.90%
 								td
 									a Apply Now
-					table.table--alternate-row
+					!=contentful.Rates[0].lineOfCredit
+					//-table.table--alternate-row
 						thead
 							tr
 								th Type
@@ -401,77 +405,79 @@ block content
 
 				div.col-md-12
 					h4.color--primary Savings Rates
-					p.
-						Effective June 4, 2010
+					p= contentful.Rates[0].savingsRatesEffective
+					//- EFFECTIVE August 1, 2017
 
-				table.table-alternate-row
-					thead
-						tr
-							th Account
-							th Rate Type
-							th Min Opening Balance
-							th Min to Earn Dividend
-							th Dividend Rate
-							th APY
-							th Dividend Declaration Date
-					tbody
-						tr
-							td Share Savings
-							td Variable
-							td $25
-							td $25
-							td 0.10%
-							td 0.10%
-							td Monthly
-						tr
-							td Checking
-							td Variable
-							td $25
-							td $0
-							td 0.00%
-							td 0.00%
-							td Monthly
-						tr
-							td Money Market
-							td Variable
-							td $2,500, $20,001
-							td $20,000 & over
-							td 0.10%, 0.10%
-							td 0.10%, 0.10%
-							td Monthly
-						tr
-							td Holiday Savings
-							td Variable
-							td $25
-							td $25
-							td 0.10%
-							td 0.10%
-							td Monthly
-						tr
-							td IRA Shar Savings
-							td Variable
-							td $50
-							td $5
-							td 0.15%
-							td 0.15%
-							td Monthly
-						tr
-							td HSA Accounts
-							td Variable
-							td $0
-							td $5
-							td 0.10%
-							td 0.10%
-							td Monthly
+					!=contentful.Rates[0].savingsRates
+					//-table.table-alternate-row
+						thead
+							tr
+								th Account
+								th Rate Type
+								th Min Opening Balance
+								th Min to Earn Dividend
+								th Dividend Rate
+								th APY
+								th Dividend Declaration Date
+						tbody
+							tr
+								td Share Savings
+								td Variable
+								td $25
+								td $25
+								td 0.10%
+								td 0.10%
+								td Monthly
+							tr
+								td Checking
+								td Variable
+								td $25
+								td $0
+								td 0.00%
+								td 0.00%
+								td Monthly
+							tr
+								td Money Market
+								td Variable
+								td $2,500, $20,001
+								td $20,000 & over
+								td 0.10%, 0.10%
+								td 0.10%, 0.10%
+								td Monthly
+							tr
+								td Holiday Savings
+								td Variable
+								td $25
+								td $25
+								td 0.10%
+								td 0.10%
+								td Monthly
+							tr
+								td IRA Shar Savings
+								td Variable
+								td $50
+								td $5
+								td 0.15%
+								td 0.15%
+								td Monthly
+							tr
+								td HSA Accounts
+								td Variable
+								td $0
+								td $5
+								td 0.10%
+								td 0.10%
+								td Monthly
 
 			div#ira.row.margin-bottom-30.text-center
 
 				div.col-md-12
 					h4.color--primary Share and IRA Certificates
-					p.
-						Effective March 1, 2017
+					p= contentful.Rates[0].iraRatesEffective
+					//- EFFECTIVE August 1, 2017
 
-					table.table--alternate-row
+					!=contentful.Rates[0].sHareAndIraCertificates
+					//-table.table--alternate-row
 						thead
 							tr
 								th Account

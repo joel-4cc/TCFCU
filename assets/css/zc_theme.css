@@ -3276,7 +3276,7 @@ a {
 }
 
 .color--white {
-    color: #fff;
+    color: #fff !important;
 }
 
 .color--dark {
