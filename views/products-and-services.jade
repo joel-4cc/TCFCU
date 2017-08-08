@@ -37,24 +37,30 @@ block content
 								div.tab__title
 									span.h6.text-center Checking Accounts
 								div.tab__content
-									div.row
+									div.row.text-center
 										
 										div.col-sm-12.margin-bottom-30
 											h4.color--primary Checking Accounts
-											!= contentful.Products[0].checkingInfo
-											//-p.
-												Tulare Federal offers you the convenience of a checking account that features easy access. There are no minimum balance requirements and no monthly fees*. With the convenience of a Visa® Debit Card you can make purchases or withdraw cash at ATMs and merchants nationwide. Contact Tulare Federal at 559-686-1791 or visit one of our branches today to open your account.
+									
 									div.row.text-center
 										div.col-sm-12
 
 											a.btn.btn--primary-2(href="#") 
 												span.btn__text Apply Now
+
+									div.row
+										
+										div.col-sm-12.margin-bottom-30
+											!= contentful.Products[0].checkingInfo
+											//-p.
+												Tulare Federal offers you the convenience of a checking account that features easy access. There are no minimum balance requirements and no monthly fees*. With the convenience of a Visa® Debit Card you can make purchases or withdraw cash at ATMs and merchants nationwide. Contact Tulare Federal at 559-686-1791 or visit one of our branches today to open your account.
+									
 									div.row.margin-top-30
-										div.col-sm-12.margin-bottom-30.text-center
-											img(src="/img/products-and-services/checking-accounts.jpg")
 										div.col-sm-12
-											
 											!= contentful.Products[0].checkingInfoList
+										div.col-sm-12.margin-top-30.text-center
+											img(src="/img/products-and-services/checking-accounts.jpg")
+										
 											//-h5.color--primary.unmarg--bottom Monthly Service Fee
 											//- p.
 											//- 	We believe that your checking account should not cost you money. It should be simply … free.
@@ -86,23 +92,29 @@ block content
 								div.tab__title
 									span.h6.text-center Savings Accounts
 								div.tab__content
-									div.row
+									div.row.text-center
 										div.col-sm-12.margin-bottom-30
 											h4.color--primary Savings Accounts
-											!= contentful.Products[0].savingsInfo
-											//-p.
-												The cornerstone of any strong and sound savings program begins with The Savings Account. Here at Tulare Federal, our Savings Account comes fully loaded.
+											
 
 									div.row.text-center
 										div.col-sm-12
 
 											a.btn.btn--primary-2(href="#") 
 												span.btn__text Apply Now
+									div.row
+										div.col-sm-12.margin-bottom-30
+											!= contentful.Products[0].savingsInfo
+											//-p.
+												The cornerstone of any strong and sound savings program begins with The Savings Account. Here at Tulare Federal, our Savings Account comes fully loaded.
+
+									
 									div.row.margin-top-30
-										div.col-sm-12.margin-bottom-30.text-center
-											img(src="/img/products-and-services/savings-accounts.jpg")
 										div.col-sm-12
 											!= contentful.Products[0].savingsInfoList
+										div.col-sm-12.margin-top-30.text-center
+											img(src="/img/products-and-services/savings-accounts.jpg")
+										
 											//- p.
 											//- 	Earns competitive monthly dividends with a balance of just $25.00
 											//- p.
@@ -121,23 +133,29 @@ block content
 								div.tab__title
 									span.h6.text-center Investments
 								div.tab__content
-									div.row
+									div.row.text-center
 										div.col-sm-12.margin-bottom-30
 											h4.color--primary Investments
-											!= contentful.Products[0].investmentInfo
-											//-p.
-												If you want to earn more money for your retirement, the Individual Retirement Account (IRA) Investment Accounts have the same requirements and limitations as regular IRAs. At Tulare Federal, your IRA:
+											
 
 									div.row.text-center
 										div.col-sm-12
 
 											a.btn.btn--primary-2(href="#") 
 												span.btn__text Apply Now
+									div.row
+										div.col-sm-12.margin-bottom-30
+											!= contentful.Products[0].investmentInfo
+											//-p.
+												If you want to earn more money for your retirement, the Individual Retirement Account (IRA) Investment Accounts have the same requirements and limitations as regular IRAs. At Tulare Federal, your IRA:
+
+									
 									div.row.margin-top-30
-										div.col-sm-12.margin-bottom-30.text-center
-											img(src="/img/products-and-services/investments.jpg")
 										div.col-sm-12
 											!= contentful.Products[0].investmentInfoList
+										div.col-sm-12.margin-top-30.text-center
+											img(src="/img/products-and-services/investments.jpg")
+										
 											//- p.
 											//- 	Minimum balance required is $5
 											//- p.
