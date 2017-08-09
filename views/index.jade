@@ -32,6 +32,22 @@ block content
 		//-include partial/home_login
 
 	//- Icon Navigation
+	- var date = new Date
+	if (contentful.Alerts[0] != undefined)
+		div.container.mt--3
+			div.row
+				div.col-md-12
+					for alert in contentful.Alerts
+						- var dateFrom = new Date(alert.dateFrom)
+						- var dateTo = new Date(alert.dateTo)
+						if (date >= dateFrom && date <= dateTo)
+							div.alert.bg--error
+								div.alert__body
+									h5= alert.title
+									p= alert.content
+									//-p #{alert.dateFrom} - #{alert.dateTo}
+								div.alert__close ×
+
 	section#icon-nav
 		div.container
 			div.row

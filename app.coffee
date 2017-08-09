@@ -52,6 +52,9 @@ module.exports =
 				Footer:
 					id: 'footer'
 					##template: 'views/partial/_cf_post.jade'
+				Alerts:
+					id: 'alert'
+					##template: 'views/partial/_cf_post.jade'
 				Posts:
 					id: 'blogPost'
 					template: 'views/partial/_cf_blog_post.jade'
