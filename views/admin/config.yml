@@ -14,5 +14,5 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Featured Image", name: "featuredImage", widget: "image"}
       - {label: "Content", name: "content", widget: "markdown"}
-      - {label: "Secondary Images", name: "secondaryImages", widget: "list"}
+        {label: "Secondary Images", name: "secondaryImages", widget: "list", fields: {label: "Image1", name: "image1", widget: "image"}, {label: "Image2", name: "image2", widget: "image"}, {label: "Image3", name: "image3", widget: "image"}}
       - {label: "Publish Date", name: "date", widget: "datetime"}
