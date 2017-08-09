@@ -20,10 +20,10 @@ module.exports =
 	extensions: [
 		js_pipeline(files: ['assets/**/*.js','assets/js/*.coffee']),
 		css_pipeline(files: ['assets/**/*.css','assets/css/*.styl'])
-		wordpress
-			site:'http://tcfcu1.4cc.co'
-			post_types:
-				post: {template:'views/partial/_blog_post.jade'}
+		##wordpress
+		##	site:'http://tcfcu1.4cc.co'
+		##	post_types:
+		##		post: {template:'views/partial/_blog_post.jade'}
 		templates
 			base:'views/templates'
 		contentful
@@ -32,7 +32,7 @@ module.exports =
 			content_types:
 				Rates:
 					id: 'loanRates'
-					template: 'views/partial/_cf_post.jade'
+					##template: 'views/partial/_cf_post.jade'
 					##filters: { 'fields.environment[in]': ['staging', 'production'] }
 					##path: (e) -> "blogging/#{e.category}/#{slugify(e.title)}"
 					##write: 'data.json'
@@ -42,16 +42,19 @@ module.exports =
 				##	id: 'xxxxxx'
 				Home:
 					id: 'homePage'
-					template: 'views/partial/_cf_post.jade'
+					##template: 'views/partial/_cf_post.jade'
 				About:
 					id: 'aboutPage'
-					template: 'views/partial/_cf_post.jade'
+					##template: 'views/partial/_cf_post.jade'
 				Products:
 					id: 'productsAndServices'
-					template: 'views/partial/_cf_post.jade'
+					##template: 'views/partial/_cf_post.jade'
 				Footer:
 					id: 'footer'
-					template: 'views/partial/_cf_post.jade'
+					##template: 'views/partial/_cf_post.jade'
+				Posts:
+					id: 'blogPost'
+					template: 'views/partial/_cf_blog_post.jade'
 	]
 	
 	stylus:

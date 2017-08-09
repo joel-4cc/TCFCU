@@ -13,7 +13,7 @@
 
 
 
-div#blog-slider.container.mt--3.mb--2
+//-div#blog-slider.container.mt--3.mb--2
 	div.row
 		//-h2.text-center.color--primary News
 		ul
@@ -24,5 +24,17 @@ div#blog-slider.container.mt--3.mb--2
 						div.slide-image.img-responsive(style="background-image:url(#{wordpress.post[i].featured_image})")
 						h4.color--primary.block.text-center= wordpress.post[i].title 
 	
+div#blog-slider.container.mt--3.mb--2
+	div.row
+		//-h2.text-center.color--primary News
+		ul
+			- if (blogPosts === undefined){blogPosts = contentful.Posts.length;}
+			- for (var i=0; i<blogPosts; i++)
+				li.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-xs-12
+					a(href="#{contentful.Posts[i]._url}")
+						div.slide-image.img-responsive(style="background-image:url(#{asset(contentful.Posts[i].featuredImage)})")
+						h4.color--primary.block.text-center= contentful.Posts[i].title 
+	
+
 
 	//-p.wordpress-child2= JSON.stringify(wordpress)
