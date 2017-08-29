@@ -350,6 +350,7 @@ body {
 
 .inline-block {
     display: inline-block;
+    float: none;
 }
 
 .block {
