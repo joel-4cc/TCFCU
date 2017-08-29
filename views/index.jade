@@ -12,7 +12,7 @@ block content
 		div#home-hero-content.container.pos-vertical-center
 			div.row
 				div.col-sm-12
-					h1.text-center= contentful.Home[0].headerText
+					h1.text-left.hr-green= contentful.Home[0].headerText
 						//-div.wpb_single_image.wpb_content_element.vc_align_center
 						//-figure.wpb_wrapper.vc_figure
 							div.vc_single_image-wrapper.vc_box_border_grey
@@ -21,7 +21,7 @@ block content
 				span.vc_empty_space_inner
 			div.wpb_text_column.wpb_content_element
 				div.wpb_wrapper
-					h3(style="text-align: center;")= contentful.Home[0].headerSubtext
+					h5.text-left= contentful.Home[0].headerSubtext
 					
 				//-p(style="text-align: center;")
 					a.btn.btn--primary.type--uppercase(href="#")
@@ -32,8 +32,9 @@ block content
 		//-include partial/home_login
 
 	//- Icon Navigation
-	- var date = new Date
-	if (contentful.Alerts[0] != undefined)
+	
+	//-if (contentful.Alerts[0] != undefined)
+		- var date = new Date
 		div.container.mt--3
 			div.row
 				div.col-md-12
@@ -47,54 +48,115 @@ block content
 									p= alert.content
 									//-p #{alert.dateFrom} - #{alert.dateTo}
 								div.alert__close ×
+	section.bg--gray
+		.container
+			.row
+				.col-sm-4
+					img(src="img/icons/piggybank.png" alt="piggy bank")
+				.col-sm-8
+					h3.hr-blue-before How We Save
+					p.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit lorem, ornare ut sem in, pharetra placerat massa. Etiam facilisis nisi nec imperdiet suscipit. Cras malesuada leo non ligula tincidunt, sed tristique eros ultricies. Fusce faucibus neque ac dui tempus, et egestas lectus mattis. Praesent a quam mattis, maximus neque sit amet, faucibus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ultrices a purus a pharetra. Morbi fermentum lobortis ex, vel ullamcorper risus tristique vitae. Nulla ornare elit sit amet mauris ultrices, nec ultricies dolor consequat. Suspendisse vel hendrerit erat. Quisque semper sem a odio vestibulum aliquam. In ut facilisis diam, sed fermentum enim. Aliquam posuere leo at dignissim cursus.
 
-	section#icon-nav
-		div.container
-			div.row
-				div.col-lg-3.text-center
-					i.icon.icon--lg.fa.fa-money
-					a.btn.btn--primary-2.block(href="/loans") 
+					a.btn.btn-blue(href="/loans") 
 						span.btn__text Loans
-				div.col-lg-3.text-center
-					i.icon.icon--lg.fa.fa-mobile-phone
-					a.btn.btn--primary-2.block(href="/mobile") 
-						span.btn__text Mobile
-				div.col-lg-3.text-center
-					i.icon.icon--lg.fa.fa-thumbs-o-up
-					a.btn.btn--primary-2.block(href="/about") 
-						span.btn__text About
-				div.col-lg-3.text-center
-					i.icon.icon--lg.fa.fa-envelope-o
-					a.btn.btn--primary-2.block(href="/contact") 
-						span.btn__text Contact
 
-	//- news slider
-	section#news-title
-		div.container
-				div.row
-					div.col-lg-12.text-center
-						h2.text-center.color--primary Latest News
-		include partial/_blog_slider
-		div.container
-			div.row.text-center
-					a.btn.btn--primary-2(href="/all-posts") 
-						span.btn__text View More
+	section#our-services
+		.container
+			.row
+				.col-sm-6.mb--3
+					h3.hr-blue-before Our Services
+			.row
+				.col-sm-3
+					img.block(src="img/icons/moneygraph.png")
+					h6.text-center Budgeting Tools
+				.col-sm-3
+					img.block(src="img/icons/car.png")
+					h6.text-center Car Loans
+				.col-sm-3
+					img.block(src="img/icons/moneybag2.png")
+					h6.text-center Refinancing
+				.col-sm-3
+					img.block(src="img/icons/moneygrow2.png")
+					h6.text-center Small Business Loans
+
+			.row
+				.col-sm-3
+					img.block(src="img/icons/money2.png")
+					h6.text-center Quick Deposits
+				.col-sm-3
+					img.block(src="img/icons/piggybank.png")
+					h6.text-center Savings Accounts
+				.col-sm-3
+					img.block(src="img/icons/bank.png")
+					h6.text-center Personalized Banking
+				.col-sm-3
+					img.block(src="img/icons/money.png")
+					h6.text-center Mobile Banking
+
+	section#become-a-member
+		.container
+			.row(style="position:relative;")
+				.col-sm-6
+					h3.hr-green-before Hear How We Make Finances Simple
+					p.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit lorem, ornare ut sem in, pharetra placerat massa. Etiam facilisis nisi nec imperdiet suscipit. Cras malesuada leo non ligula tincidunt, sed tristique eros ultricies. Fusce faucibus neque ac dui tempus, et egestas lectus mattis. Praesent a quam mattis, maximus neque sit amet, faucibus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ultrices a purus a pharetra. Morbi fermentum lobortis ex, vel ullamcorper risus tristique vitae. Nulla ornare elit sit amet mauris ultrices, nec ultricies dolor consequat. Suspendisse vel hendrerit erat. Quisque semper sem a odio vestibulum aliquam. In ut facilisis diam, sed fermentum enim. Aliquam posuere leo at dignissim cursus.
+
+					a.btn.btn-green(href="/loans") 
+						span.btn__text Become A Member
+				.col-sm-6.imagebg(style="position: absolute; right: 0; top: 0; height: 100%;")
+					.background-image-holder
+						img(src="img/header/test1.jpg")
+					.container
+
+
+	//- section#icon-nav
+	//- 	div.container
+	//- 		div.row
+	//- 			div.col-lg-3.text-center
+	//- 				i.icon.icon--lg.fa.fa-money
+	//- 				a.btn.btn--primary-2.block(href="/loans") 
+	//- 					span.btn__text Loans
+	//- 			div.col-lg-3.text-center
+	//- 				i.icon.icon--lg.fa.fa-mobile-phone
+	//- 				a.btn.btn--primary-2.block(href="/mobile") 
+	//- 					span.btn__text Mobile
+	//- 			div.col-lg-3.text-center
+	//- 				i.icon.icon--lg.fa.fa-thumbs-o-up
+	//- 				a.btn.btn--primary-2.block(href="/about") 
+	//- 					span.btn__text About
+	//- 			div.col-lg-3.text-center
+	//- 				i.icon.icon--lg.fa.fa-envelope-o
+	//- 				a.btn.btn--primary-2.block(href="/contact") 
+	//- 					span.btn__text Contact
+
+	//- //- news slider
+	//- section#news-title
+	//- 	div.container
+	//- 			div.row
+	//- 				div.col-lg-12.text-center
+	//- 					h2.text-center.color--primary Latest News
+	//- 	include partial/_blog_slider
+	//- 	div.container
+	//- 		div.row.text-center
+	//- 				a.btn.btn--primary-2(href="/all-posts") 
+	//- 					span.btn__text View More
 	
-	//- parallax section
-	section.text-center
-		div.container
-			div.row
-				div.col-sm-12
-					!= contentful.Home[0].homePageVideo
-					//-iframe(src="https://player.vimeo.com/video/86148358" width="1140" height="641" frameborder="0" title="The Pismo Preserve" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
+	//- //- parallax section
+	//- section.text-center
+	//- 	div.container
+	//- 		div.row
+	//- 			div.col-sm-12
+	//- 				!= contentful.Home[0].homePageVideo
+	//- 				//-iframe(src="https://player.vimeo.com/video/86148358" width="1140" height="641" frameborder="0" title="The Pismo Preserve" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="")
 
-	//- "steeve likes us" section
-	div#steeve.row(style="margin:0;")
-		div.container
-			div.row
-				div.col-lg-6.img-responsive.height-50(style="background-image:url(/img/steeve.jpg)")
-				div.text-content.col-lg-6.text-left
-					h1.color--primary= contentful.Home[0].storyTitle
-					//-Steeve Likes Us
-					p= contentful.Home[0].storyContent
-					//- When he found himself in a sticky situation, Tulare Federal member Steve Wiliams turned his credit union guidance. What happened next shocked him and turned his troubling time into a true learning opportunity.
+	//- //- "steeve likes us" section
+	//- div#steeve.row(style="margin:0;")
+	//- 	div.container
+	//- 		div.row
+	//- 			div.col-lg-6.img-responsive.height-50(style="background-image:url(/img/steeve.jpg)")
+	//- 			div.text-content.col-lg-6.text-left
+	//- 				h1.color--primary= contentful.Home[0].storyTitle
+	//- 				//-Steeve Likes Us
+	//- 				p= contentful.Home[0].storyContent
+	//- 				//- When he found himself in a sticky situation, Tulare Federal member Steve Wiliams turned his credit union guidance. What happened next shocked him and turned his troubling time into a true learning opportunity.

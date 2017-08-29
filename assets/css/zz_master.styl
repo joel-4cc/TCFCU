@@ -3,18 +3,36 @@
 //normalize-css()
 //base()
 
-h1, h2, h3, h4, h5, h6, span, .h1, .h2, .h3, .h4, .h5, .h6
-	font-family $garamond
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+	font-family $futura
 	color $gray
-	font-weight bold
+	text-transform uppercase
 	margin-bottom 10px
+	letter-spacing 15px
+	font-weight 100
 
-p
+h1
+	font-size 6em
+h2 
+	font-size 5em
+h3
+	font-size 4em
+h4
+	font-size 3em
+h5
+	font-size 2em
+h6 
+	font-size 1.5em
+	letter-spacing 5px
+	margin-bottom 10px !important
+
+
+p, span
 	font-family $openSans
 	color $gray
-	font-size 0.8em
+	font-size 1em
 input
-	font-size 0.8em
+	font-size 1em
 ::selection 
 	background $navy /* WebKit/Blink Browsers */
 	color #fff
@@ -24,7 +42,34 @@ input
 	color #fff
 
   
-
+.hr-green::after
+	background-color $green
+	height 5px
+	content ""
+	display block
+	width 75%
+	margin-top 15px
+.hr-blue::after
+	background-color $blue
+	height 5px
+	content ""
+	display block
+	width 75%
+	margin-top 15px
+.hr-green-before::before
+	background-color $green
+	height 5px
+	content ""
+	display block
+	width 75%
+	margin-bottom 15px
+.hr-blue-before::before
+	background-color $blue
+	height 5px
+	content ""
+	display block
+	width 75%
+	margin-bottom 15px
 
 // ---- misc
 // #testing-bg
@@ -38,52 +83,61 @@ input
 // 	background-repeat no-repeat
 // 	background-size cover
 // 	background-attachment fixed
-.btn--primary-2
-	background-color $navy !important
-	background $navy !important
-	border none !important
-	border-radius 0px !important
-.btn--primary-2:hover
-	background-color $navyHover
+.btn span
+	font-size 1.4em
+	text-transform uppercase
+	letter-spacing 5px
 
-.img-responsive
-	background-size cover
-	background-repeat no-repeat
-	background-position center center
-.icon 
-	margin 20px auto
-.tabs li.active .tab__title span
-	color $navy
-	
-.margin-bottom-30
-	margin-bottom 30px
-.margin-top-30
-	margin-top 30px
+.btn-blue
+	border-radius 0px 
+	border 4px $blue2 solid !important
+	span
+		color $blue !important
+	&:hover
+		border 4px $blue solid !important
 
-a.btn
-	width auto
-	text-align center
-	margin 20px auto 
+		
+.btn-green
+	border-radius 0px 
+	border 4px $green2 solid !important
+	span
+		color $green !important
+	&:hover
+		border 4px $green solid !important
 
-hr 
-	margin 5em auto
-	border-color rgba(87, 129, 138,0.4)
-	//opacity 0.4
+.bg--gray
+	background $gray2
 
-.center-column
-	margin 0 auto !important
-	float none !important
-	
+// ---- header
 
-.map-container
-	min-height 500px
-ul.tabs
-	margin 3em auto
-	border none
-	text-align center
-	width 100%
-	
-//#hero-cover
+#menu1
+	.menu-horizontal
+		li
+			padding 10px
+			margin 0
+			&::after
+				padding 10px 0 0 0
+	.logo
+		max-height 100% !important
+		top 0
+		bottom 0
+		margin auto
+		position absolute
+		
+
+
+
+
+// ---- Home page
+
+#our-services
+	.col-sm-3
+		padding 0 5% 25px 5%
+
+
+
+
+
 
 // ---- Tables
 
@@ -104,39 +158,39 @@ table
 
 // ---- header
 
-#header
-	position absolute
-	z-index 10
-	background rgba(255,255,255,1)
-	width 100%
-	border-bottom 0.5px rgba(255,255,255,0.4) solid
-	//height 120px
+// #header
+// 	position absolute
+// 	z-index 10
+// 	background rgba(255,255,255,1)
+// 	width 100%
+// 	border-bottom 0.5px rgba(255,255,255,0.4) solid
+// 	//height 120px
 	
-	#menu1
-		padding 0
+// 	#menu1
+// 		padding 0
 		
-		.bar__module
-			a
-				height inherit
-				display block
-		.menu-horizontal
-			top 0
-			font-size 16px			
-			a
-				color $navy !important
-				padding 20px 10px
-				opacity 1
-				display block
-				&:hover
-					opacity 0.5
-.logo.logo-light
-	max-height 120px
-	top 0
-#login-button
-	position absolute
-	top 30px
-	right 20px
-	z-index 20
+// 		.bar__module
+// 			a
+// 				height inherit
+// 				display block
+// 		.menu-horizontal
+// 			top 0
+// 			font-size 16px			
+// 			a
+// 				color $navy !important
+// 				padding 20px 10px
+// 				opacity 1
+// 				display block
+// 				&:hover
+// 					opacity 0.5
+// .logo.logo-light
+// 	max-height 120px
+// 	top 0
+// #login-button
+// 	position absolute
+// 	top 30px
+// 	right 20px
+// 	z-index 20
 // ---- footer
 
 //#footer
