@@ -25,8 +25,6 @@ h6
 	font-size 1.5em
 	letter-spacing 5px
 	margin-bottom 10px !important
-
-
 p, span
 	font-family $openSans
 	color $gray
@@ -34,11 +32,11 @@ p, span
 input
 	font-size 1em
 ::selection 
-	background $navy /* WebKit/Blink Browsers */
+	background $blue /* WebKit/Blink Browsers */
 	color #fff
 
 ::-moz-selection
-	background: $navy /* Gecko Browsers */
+	background: $blue /* Gecko Browsers */
 	color #fff
 
   
@@ -89,6 +87,8 @@ input
 	right 0
 	top 0
 	height 100%
+.megamenu-subhead
+	padding-left 25px
 // ---- misc
 // #testing-bg
 // 	height 100%
@@ -129,6 +129,7 @@ input
 // ---- header
 
 #menu1
+		
 	padding 0px
 	.menu-horizontal
 		top 0
@@ -379,13 +380,39 @@ table
 	// 	left 0px
 	// 	top 0px
 	// 	width 100%
-
+	#menu1
+		.megamenu-subhead
+			padding 0
+		[class*='hr-']:after, [class*='hr-']:before
+			width 100%
+		.menu-horizontal
+			>li
+				margin 0
+				&:hover
+					background unset
+					//color $white
+					>span, >a
+						color $gray !important
+		.dropdown__content
+				padding 0 !important
+				border-radius 0px !important
+		.menu-vertical
+			li
+				padding 10px 25px
+				margin 0
+				&:not(.separate)::after
+					padding 10px 0 0 0
+				&:hover
+					background unset
+					color $gray
+					>span, >a
+						color $gray !important
 @media (max-height: 900px) 
 	#home-hero, #hero-cover
 		min-height 100vh
 @media (max-height: 730px) 
 	#hero-cover
 		padding 9em 0 1em 0
-@media (max-height: 600px)
-	#home-hero-content
-		top 95px
+// @media (max-height: 600px)
+// 	#home-hero-content
+// 		top 95px

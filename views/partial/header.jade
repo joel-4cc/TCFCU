@@ -13,7 +13,7 @@
 	nav#menu1.bar.bar--sm.bar-1.hidden-xs
 		.container
 			.row(style="position:relative;")
-				.float-left.hidden-sm
+				.float-left.hidden-sm.hidden-xs
 					.bar__module
 						a(href='index.html')
 							img.logo.logo-dark(alt='logo', src='img/logo/logo-full-color.png')
@@ -44,7 +44,7 @@
 																
 														
 												.col-md-2.col-md-offset-6.col-sm-4
-													h6 Industries
+													h6.megamenu-subhead.hr-blue Industries
 													ul.menu-vertical
 														li
 															a(href='home-construction.html')
@@ -92,7 +92,7 @@
 															a(href='home-wedding.html')
 																| Wedding
 												.col-md-2.col-sm-4
-													h6 Landing Pages
+													h6.megamenu-subhead.hr-blue Landing Pages
 													ul.menu-vertical
 														li
 															a(href='home-landing-1.html')
@@ -134,7 +134,7 @@
 															a(href='home-software-3.html')
 																| Software 3
 												.col-md-2.col-sm-4
-													h6 Portfolios
+													h6.megamenu-subhead.hr-blue Portfolios
 													ul.menu-vertical
 														li
 															a(href='home-portfolio-agency-1.html')
@@ -160,7 +160,7 @@
 														li
 															a(href='home-portfolio-video.html')
 																| Video
-													h6 Coming Soon
+													h6.megamenu-subhead.hr-blue Coming Soon
 													ul.menu-vertical
 														li
 															a(href='home-coming-soon-1.html')
@@ -188,30 +188,35 @@
 																
 														
 												.col-sm-6.col-md-3.col-md-offset-6
+													h6.megamenu-subhead.hr-blue Loans
 													ul.menu-vertical
 														li
 															a(href='/autoloans')
 																| Auto Loans
 														li
+															a(href='/recreationalloans')
+																| Recreational Loans
+														li
 															a(href='/mortgages')
-																| Mortgage
+																| Mortgage													
+														li
+															a(href='/personalloans')
+																| Perosnal Loans
+														li
+															a(href='/creditcards')
+																| Credit Card
+														li
+															a(href='/solarloans')
+																| Solar Loans
+												.col-sm-6.col-md-3
+													h6.megamenu-subhead.hr-blue Account
+													ul.menu-vertical
 														li
 															a(href='#')
 																| Checking
 														li
 															a(href='#')
 																| Savings
-														li
-															a(href='/invest')
-																| Investments
-														li
-															a(href='/creditcards')
-																| Credit Card
-														li
-															a(href='#')
-																| HSA Accounts
-												.col-sm-6.col-md-3
-													ul.menu-vertical
 														li
 															a(href='#')
 																| Online Billpay
@@ -222,14 +227,11 @@
 															a(href='#')
 																| SBA Loans
 														li
-															a(href='/solarloans')
-																| Solar Loans
+															a(href='#')
+																| HSA Accounts
 														li
-															a(href='/recreationalloans')
-																| Recreational Loans
-														li
-															a(href='/personalloans')
-																| Perosnal Loans
+															a(href='/invest')
+																| Investments
 
 							li.dropdown
 								span.dropdown__trigger Services
