@@ -70,6 +70,20 @@ input
 	display block
 	width 75%
 	margin-bottom 15px
+.hr-white-before::before
+	background-color $white
+	height 5px
+	content ""
+	display block
+	width 75%
+	margin-bottom 15px
+.hr-white-after::after
+	background-color $white
+	height 5px
+	content ""
+	display block
+	width 75%
+	margin-bottom 15px
 .col-right-full-height
 	position absolute
 	right 0
@@ -115,18 +129,44 @@ input
 // ---- header
 
 #menu1
+	padding 0px
 	.menu-horizontal
-		li
-			padding 10px
+		top 0
+		>li
+			padding 25px
 			margin 0
-			&::after
+			&:not(.separate)::after
 				padding 10px 0 0 0
+			&:hover
+				background $blue
+				//color $white
+				>span, >a
+					color $white !important
+	.dropdown__content
+			padding 0 !important
+			border-radius 0px !important
+	.menu-vertical
+		li
+			padding 10px 25px
+			margin 0
+			&:not(.separate)::after
+				padding 10px 0 0 0
+			&:hover
+				background $blue
+				color $white
+				>span, >a
+					color $white !important
 	.logo
 		max-height 100% !important
 		top 0
 		bottom 0
 		margin auto
 		position absolute
+	.megamenu
+		.col-sm-12
+			padding 0px !important
+		div[class*='col-']
+			padding 25px 10px
 #menu2
 	padding 0 25px
 	.logo

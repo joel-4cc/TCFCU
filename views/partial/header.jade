@@ -13,11 +13,16 @@
 	nav#menu1.bar.bar--sm.bar-1.hidden-xs
 		.container
 			.row(style="position:relative;")
-				.float-left.hidden-xs
+				.float-left.hidden-sm
 					.bar__module
 						a(href='index.html')
 							img.logo.logo-dark(alt='logo', src='img/logo/logo-full-color.png')
 							img.logo.logo-light(alt='logo', src='img/logo/logo-full-color.png')
+				.float-left.hidden-xs.hidden-md.hidden-lg
+					.bar__module
+						a(href='index.html')
+							img.logo.logo-dark(alt='logo', src='img/logo/favicon_green.png')
+							img.logo.logo-light(alt='logo', src='img/logo/favicon_green.png')
 					// end module
 				.float-right.text-right
 					.bar__module
@@ -168,162 +173,66 @@
 																| Coming Soon 3
 											
 							li.dropdown
-								span.dropdown__trigger Pages
-								.dropdown__container
+								span.dropdown__trigger Products
+								.dropdown__container.megamenu
 									.container
 										.row
-											.dropdown__content.col-md-2.col-sm-4
-												ul.menu-vertical
-													li.dropdown
-														span.dropdown__trigger About
-														.dropdown__container
-															.container
-																.row
-																	.dropdown__content.col-md-2
-																		ul.menu-vertical
-																			li
-																				a(href='page-about-company.html')
-																					| About Company
-																			li
-																				a(href='page-about-team.html')
-																					| About Team
-																			li
-																				a(href='page-about-me.html')
-																					| About Me
-																			li
-																				a(href='page-about-history.html')
-																					| About History
-																	
-													li.dropdown
-														span.dropdown__trigger Careers
-														.dropdown__container
-															.container
-																.row
-																	.dropdown__content.col-md-2.col-sm-4
-																		ul.menu-vertical
-																			li
-																				a(href='page-careers.html')
-																					| Careers Listing
-																			li
-																				a(href='page-careers-single.html')
-																					| Career Single
-																	
-													li.dropdown
-														span.dropdown__trigger Contact
-														.dropdown__container
-															.container
-																.row
-																	.dropdown__content.col-md-2.col-sm-4
-																		ul.menu-vertical
-																			li
-																				a(href='page-contact-map-1.html')
-																					| Contact Map 1
-																			li
-																				a(href='page-contact-map-2.html')
-																					| Contact Map 2
-																			li
-																				a(href='page-contact-map-3.html')
-																					| Contact Map 3
-																			li
-																				a(href='page-contact-map-4.html')
-																					| Contact Map 4
-																			li
-																				a(href='page-contact-planner-1.html')
-																					| Contact Planner 1
-																			li
-																				a(href='page-contact-planner-2.html')
-																					| Contact Planner 2
-																	
-													li.dropdown
-														span.dropdown__trigger Pricing
-														.dropdown__container
-															.container
-																.row
-																	.dropdown__content.col-md-2.col-sm-4
-																		ul.menu-vertical
-																			li
-																				a(href='page-pricing-1.html')
-																					| Pricing Plans 1
-																			li
-																				a(href='page-pricing-2.html')
-																					| Pricing Plans 2
-																			li
-																				a(href='page-pricing-3.html')
-																					| Pricing Plans 3
-																	
-													li.dropdown
-														span.dropdown__trigger Services
-														.dropdown__container
-															.container
-																.row
-																	.dropdown__content.col-md-2.col-sm-4
-																		ul.menu-vertical
-																			li
-																				a(href='page-services-1.html')
-																					| Services 1
-																			li
-																				a(href='page-services-2.html')
-																					| Services 2
-																			li
-																				a(href='page-services-3.html')
-																					| Services 3
-													li.dropdown.separate
-														span.dropdown__trigger Accounts
-														.dropdown__container
-															.container
-																.row
-																	.dropdown__content.col-md-2.col-sm-4
-																		ul.menu-vertical
-																			li
-																				a(href='page-accounts-profile.html')
-																					| Public Profile
-																			li
-																				a(href='page-accounts-settings.html')
-																					| Account Settings
-																			li
-																				a(href='page-accounts-login-1.html')
-																					| Login Simple
-																			li
-																				a(href='page-accounts-login-2.html')
-																					| Login Social
-																			li
-																				a(href='page-accounts-create-1.html')
-																					| Create Simple
-																			li
-																				a(href='page-accounts-create-2.html')
-																					| Create Social
-																			li
-																				a(href='page-accounts-recover.html')
-																					| Recover Account
-																	
-													li.dropdown
-														span.dropdown__trigger Utilities
-														.dropdown__container
-															.container
-																.row
-																	.dropdown__content.col-md-2.col-sm-4
-																		ul.menu-vertical
-																			li
-																				a(href='page-utility-conversation.html')
-																					| Conversation
-																			li
-																				a(href='404.html')
-																					| Error 404
-																			li
-																				a(href='500.html')
-																					| Error 500
-																			li
-																				a(href='page-utility-maintnence.html')
-																					| Maintnence Mode
-																			li
-																				a(href='page-utility-onboarding.html')
-																					| Onboarding
-																			li
-																				a(href='page-utility-search-results.html')
-																					| Search Results
-																	
+											.col-sm-12.dropdown__content.dropdown__content--lg
+												.pos-absolute.col-md-6.imagebg.hidden-sm.hidden-xs(data-overlay='4')
+													.background-image-holder
+														img(alt='background', src='img/loans/recreational-loans.jpg')
+													.container.pos-vertical-center
+														.row
+															.col-md-8.col-md-offset-2
+																h5.hr-white-after.color--white GET STARTED ON YOUR NEXT ADVENTURE TODAY
+																
+														
+												.col-sm-6.col-md-3.col-md-offset-6
+													ul.menu-vertical
+														li
+															a(href='/autoloans')
+																| Auto Loans
+														li
+															a(href='/mortgages')
+																| Mortgage
+														li
+															a(href='#')
+																| Checking
+														li
+															a(href='#')
+																| Savings
+														li
+															a(href='/invest')
+																| Investments
+														li
+															a(href='/creditcards')
+																| Credit Card
+														li
+															a(href='#')
+																| HSA Accounts
+												.col-sm-6.col-md-3
+													ul.menu-vertical
+														li
+															a(href='#')
+																| Online Billpay
+														li
+															a(href='/mobile')
+																| Mobile Banking
+														li
+															a(href='#')
+																| SBA Loans
+														li
+															a(href='/solarloans')
+																| Solar Loans
+														li
+															a(href='/recreationalloans')
+																| Recreational Loans
+														li
+															a(href='/personalloans')
+																| Perosnal Loans
+
 							li.dropdown
-								span.dropdown__trigger Blog
+								span.dropdown__trigger Services
 								.dropdown__container
 									.container
 										.row
@@ -373,7 +282,7 @@
 																					| Video Post
 																	
 							li.dropdown
-								span.dropdown__trigger Shop
+								span.dropdown__trigger Invest
 								.dropdown__container
 									.container
 										.row
@@ -438,7 +347,7 @@
 															| Terms
 											
 							li.dropdown
-								span.dropdown__trigger Portfolio
+								span.dropdown__trigger Learn
 								.dropdown__container
 									.container
 										.row
@@ -541,7 +450,7 @@
 																					| Project Single 2
 																	
 							li.dropdown
-								span.dropdown__trigger Blocks
+								span.dropdown__trigger Join
 								.dropdown__container
 									.container
 										.row
@@ -642,131 +551,3 @@
 																li
 																	a(href='sections-videos.html')
 																		| Videos
-													
-							li.dropdown
-								span.dropdown__trigger Elements
-								.dropdown__container
-									.container
-										.row
-											.col-sm-12.dropdown__content.dropdown__content--lg
-												.pos-absolute.col-md-5.imagebg.hidden-sm.hidden-xs(data-overlay='4')
-													.background-image-holder
-														img(alt='background', src='img/stack/dropdown-2.jpg')
-													.container.pos-vertical-center
-														.row
-															.col-md-8.col-md-offset-2
-																img.image--xxs(alt='Logo', src='img/stack/logo-light.png')
-																span.h6.color--white Detailed and organised elements
-																a.btn.btn--primary.type--uppercase(href='elements.html')
-																	span.btn__text
-																		| Explore Elements
-														
-												.col-md-2.col-md-offset-6.col-sm-4
-													ul.menu-vertical
-														li
-															a(href='elements-accordions.html')
-																| Accordions
-														li
-															a(href='elements-alerts.html')
-																| Alerts
-														li
-															a(href='elements-boxes.html')
-																| Boxes
-														li
-															a(href='elements-buttons.html')
-																| Buttons
-														li
-															a(href='elements-colors.html')
-																| Colors
-														li
-															a(href='elements-countdown.html')
-																| Countdown
-														li
-															a(href='elements-dropdowns.html')
-																| Dropdowns
-														li
-															a(href='elements-form-elements.html')
-																| Form Elements
-														li
-															a(href='elements-gradient-backgrounds.html')
-																| Gradient Backgrounds
-														li
-															a(href='elements-grid.html')
-																| Grid System
-														li
-															a(href='elements-image-backgrounds.html')
-																| Image Backgrounds
-														li
-															a(href='elements-instagram.html')
-																| Instagram
-												.col-md-2.col-sm-4
-													ul.menu-vertical
-														li
-															a(href='elements-lightbox.html')
-																| Lightbox
-														li
-															a(href='elements-maps.html')
-																| Maps
-														li
-															a(href='elements-masonry.html')
-																| Masonry
-														li
-															a(href='elements-modals.html')
-																| Modals
-														li
-															a(href='elements-navigation.html')
-																| Navigation Bars
-														li
-															a(href='elements-navigation-inpage.html')
-																| Navigation In-Page
-														li
-															a(href='elements-navigation-sidebar.html')
-																| Navigation Sidebar
-														li
-															a(href='elements-notifications.html')
-																| Notifications
-														li
-															a(href='elements-parallax.html')
-																| Parallax
-														li
-															a(href='elements-pricing.html')
-																| Pricing
-														li
-															a(href='elements-radials.html')
-																| Radials
-														li
-															a(href='elements-scrims-overlays.html')
-																| Scrims & Overlays
-												.col-md-2.col-sm-4
-													ul.menu-vertical
-														li
-															a(href='elements-sliders.html')
-																| Sliders
-														li
-															a(href='elements-tables.html')
-																| Tables
-														li
-															a(href='elements-tabs.html')
-																| Tabs
-														li
-															a(href='elements-tooltips.html')
-																| Tooltips
-														li
-															a(href='elements-twitter.html')
-																| Twitter Feed
-														li
-															a(href='elements-typed-text.html')
-																| Typed Text
-														li
-															a(href='elements-typography.html')
-																| Typography
-														li
-															a(href='elements-video-background.html')
-																| Video Backgrounds
-														li
-															a(href='elements-video-inline.html')
-																| Video Inline
-														li
-															a(href='elements-wizards.html')
-																| Wizards
-											
