@@ -89,42 +89,36 @@ input
 	height 100%
 .megamenu-subhead
 	padding-left 25px
+
 // ---- misc
-// #testing-bg
-// 	height 100%
-// 	width 100%
-// 	position fixed
-// 	z-index 0
-// 	opacity .1
-// 	background-image url("/img/header/loans-solar.jpg")
-// 	background-position center center
-// 	background-repeat no-repeat
-// 	background-size cover
-// 	background-attachment fixed
-.btn span
+
+.btn
+	border-radius 0px 
+	span
 	font-size 1.4em
 	text-transform uppercase
 	letter-spacing 5px
 
-.btn-blue
-	border-radius 0px 
-	border 4px $blue2 solid !important
-	span
-		color $blue !important
-	&:hover
-		border 4px $blue solid !important
+	&.btn-blue
+		border 4px $blue2 solid !important
+		span
+			color $blue !important
+		&:hover
+			border 4px $blue solid !important
 
-		
-.btn-green
-	border-radius 0px 
-	border 4px $green2 solid !important
-	span
-		color $green !important
-	&:hover
-		border 4px $green solid !important
+	&.btn-green 
+		border 4px $green2 solid !important
+		span
+			color $green !important
+		&:hover
+			border 4px $green solid !important
 
 .bg--gray
 	background $gray2
+.bg--blue
+	background $blue
+.bg--green
+	background $green
 
 // ---- header
 
@@ -147,16 +141,20 @@ input
 			padding 0 !important
 			border-radius 0px !important
 	.menu-vertical
+		padding-left 25px
 		li
-			padding 10px 25px
-			margin 0
-			&:not(.separate)::after
-				padding 10px 0 0 0
-			&:hover
-				background $blue
-				color $white
-				>span, >a
-					color $white !important
+			
+			a
+				display block
+				padding 5px 0px
+				margin 0
+				&:not(.separate)::after
+					padding 10px 0 0 0
+				&:hover
+					//background $blue
+					color $blue
+					>span, >a
+						color $white !important
 	.logo
 		max-height 100% !important
 		top 0
@@ -211,43 +209,11 @@ table
 
 // ---- header
 
-// #header
-// 	position absolute
-// 	z-index 10
-// 	background rgba(255,255,255,1)
-// 	width 100%
-// 	border-bottom 0.5px rgba(255,255,255,0.4) solid
-// 	//height 120px
-	
-// 	#menu1
-// 		padding 0
-		
-// 		.bar__module
-// 			a
-// 				height inherit
-// 				display block
-// 		.menu-horizontal
-// 			top 0
-// 			font-size 16px			
-// 			a
-// 				color $navy !important
-// 				padding 20px 10px
-// 				opacity 1
-// 				display block
-// 				&:hover
-// 					opacity 0.5
-// .logo.logo-light
-// 	max-height 120px
-// 	top 0
-// #login-button
-// 	position absolute
-// 	top 30px
-// 	right 20px
-// 	z-index 20
+
+
 // ---- footer
 
-//#footer
-	//background-color #525252
+
 
 
 // ---- Partials
@@ -275,7 +241,7 @@ table
 #home-hero, #hero-cover
 	min-height 80vh
 .hamburger-toggle > i	
-	color $navy
+	color $blue
 	//line-height 100px
 
 #icon-nav
@@ -299,35 +265,8 @@ table
 
 
 
-@media (max-width: 992px) //tablet or small desktop
-	// img.logo.logo-light
-	// 	margin 0 auto
-	// #menu1
-	// 	//background $navy
-		
-	// 	.float-right
-	// 		float none
-	// 	.menu-horizontal a
-	// 		color $gray
-	// 		//padding 10px 5px
-	// 	.bar__module
-	// 		margin-bottom 0px
-	// #steeve
-	// 	.text-content
-	// 		padding 25px;
-	// div[class*='col-']:not([class*='-12'])
-	// 	margin-top 30px
-		
-	// h1, h2, h3, h4, h5, h6
-	// 	text-align center
-		
-	// img
-	// 	margin 0 auto
-	// 	display block
-	// #login-button
-	// 	right 20px
-	// // #home-login
-	// // 	position relative
+//@media (max-width: 992px) //tablet or small desktop
+
 
 @media (max-width:768px) //mobile
 	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
@@ -357,29 +296,7 @@ table
 	#footer
 		.logo
 			margin-top 50px
-	// .logo.logo-light
-	// 	max-height 100px	
-	// 	margin-bottom 20px !important
-	// 	max-width 90%
-	// #home-hero-content
-	// 	top 125px
-	// #home-login
-	// 	input
-	// 		margin 0 0 20px 0
-	// #header 
-	// 	//height 100px
-	// 	.bar
-	// 		padding 0
-	// #mobile-hamburger
-	// 	float right !important
-	// #mobile-logo
-	// 	float left !important
-	// #login-button
-	// 	position relative
-	// 	right 0px
-	// 	left 0px
-	// 	top 0px
-	// 	width 100%
+	
 	#menu1
 		.megamenu-subhead
 			padding 0
