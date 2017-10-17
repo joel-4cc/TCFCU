@@ -6,130 +6,129 @@
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	font-family $futura
 	color $gray
-	text-transform uppercase
+	//text-transform uppercase
 	margin-bottom 10px
 	letter-spacing 15px
 	font-weight 100
 
 h1
 	font-size 6em
-h2 
+	text-transform uppercase
+h2
 	font-size 5em
 h3
 	font-size 4em
+	font-weight 400
+	letter-spacing 5px
 h4
 	font-size 3em
 h5
 	font-size 2em
-h6 
-	font-size 1.5em
+h6
+	font-size 1.8em
+	font-weight 400
 	letter-spacing 5px
 	margin-bottom 10px !important
-p, span
-	font-family $openSans
+p, span, input, select, textarea
+	font-family $futura
 	color $gray
-	font-size 1em
+	font-size 1.6em
+	line-height 1.6em
 input
 	font-size 1em
-::selection 
+::selection
 	background $blue /* WebKit/Blink Browsers */
-	color #fff
+	color $white
 
 ::-moz-selection
 	background: $blue /* Gecko Browsers */
-	color #fff
+	color $white
 
-  
-.hr-green::after
+*[class*='hr-'][class*='-after']::after, *[class*='hr-'][class*='-before']::before
+	height 5px
+	content ""
+	display block
+	width 75%
+	margin 15px 0
+[class*='hr-green']::after, [class*='hr-green']::before
 	background-color $green
-	height 5px
-	content ""
-	display block
-	width 75%
-	margin-top 15px
-.hr-blue::after
+[class*='hr-blue']::after, [class*='hr-blue']::before
 	background-color $blue
-	height 5px
-	content ""
-	display block
-	width 75%
-	margin-top 15px
-.hr-green-before::before
-	background-color $green
-	height 5px
-	content ""
-	display block
-	width 75%
-	margin-bottom 15px
-.hr-blue-before::before
-	background-color $blue
-	height 5px
-	content ""
-	display block
-	width 75%
-	margin-bottom 15px
-.hr-white-before::before
+[class*='hr-white']::after, [class*='hr-white']::before
 	background-color $white
-	height 5px
-	content ""
-	display block
-	width 75%
-	margin-bottom 15px
-.hr-white-after::after
-	background-color $white
-	height 5px
-	content ""
-	display block
-	width 75%
-	margin-bottom 15px
+
+
 .col-right-full-height
 	position absolute
 	right 0
 	top 0
 	height 100%
+
+
 .megamenu-subhead
 	padding-left 25px
 
 // ---- misc
-
+section
+	padding 100px 0
 .btn
-	border-radius 0px 
+	border-radius 0px
 	span
 	font-size 1.4em
 	text-transform uppercase
 	letter-spacing 5px
 
 	&.btn-blue
-		border 4px $blue2 solid !important
+		border 4px $blue solid !important
 		span
 			color $blue !important
 		&:hover
 			border 4px $blue solid !important
 
-	&.btn-green 
-		border 4px $green2 solid !important
+	&.btn-green
+		border 4px $green solid !important
 		span
 			color $green !important
 		&:hover
 			border 4px $green solid !important
 
+.col-center
+	float none
+	margin 0 auto
+
+// ---- Colors
+
 .bg--gray
-	background $gray2
+	background $gray4
 .bg--blue
 	background $blue
 .bg--green
 	background $green
+.color--white
+	color $white
+.color--blue
+	color $blue
+.color--green
+	color $green
+a
+	transition 0.2s
+	color $blue
+	&:hover,&:active
+		transition 0.2s
+		color $blueHover
 
 // ---- header
 
 #menu1
-		
+
 	padding 0px
 	.menu-horizontal
 		top 0
 		>li
-			padding 25px
 			margin 0
+			>span
+				padding 25px
+				display block
 			&:not(.separate)::after
 				padding 10px 0 0 0
 			&:hover
@@ -143,11 +142,13 @@ input
 	.menu-vertical
 		padding-left 25px
 		li
-			
+
 			a
 				display block
 				padding 5px 0px
 				margin 0
+				&.color--white
+					color $white
 				&:not(.separate)::after
 					padding 10px 0 0 0
 				&:hover
@@ -174,7 +175,7 @@ input
 		bottom 0
 		margin auto
 		position absolute
-		
+
 
 
 
@@ -184,6 +185,8 @@ input
 #our-services
 	.col-sm-3
 		padding 0 5% 25px 5%
+		img
+			padding 0 35px
 
 
 
@@ -197,14 +200,14 @@ table
 	text-align center
 	thead
 		tr
-			th 
+			th
 				text-align center
-				background-color $navy
-				color #fff
+				background-color $blue
+				color $white
 	tbody
 		tr:nth-child(even)
 			background-color rgba(0,0,0,.04) !important
-		
+
 
 
 // ---- header
@@ -226,7 +229,7 @@ table
 	width 100%
 	h1, h2, h3, h4, h5, h6
 		margin 0
-		color #fff
+		color $white
 
 
 #blog-slider
@@ -234,13 +237,13 @@ table
 		height 300px !important
 	li
 		list-style-type none
-		
+
 
 
 // ---- Home page
 #home-hero, #hero-cover
 	min-height 80vh
-.hamburger-toggle > i	
+.hamburger-toggle > i
 	color $blue
 	//line-height 100px
 
@@ -273,7 +276,7 @@ table
 		letter-spacing 5px
 	h1
 		font-size 4em
-	h2 
+	h2
 		font-size 3.5em
 	h3
 		font-size 3em
@@ -281,7 +284,7 @@ table
 		font-size 2.5em
 	h5
 		font-size 2em
-	h6 
+	h6
 		font-size 1.5em
 	.inline-block-xs
 		width 49%
@@ -296,7 +299,7 @@ table
 	#footer
 		.logo
 			margin-top 50px
-	
+
 	#menu1
 		.megamenu-subhead
 			padding 0
@@ -324,10 +327,10 @@ table
 					color $gray
 					>span, >a
 						color $gray !important
-@media (max-height: 900px) 
+@media (max-height: 900px)
 	#home-hero, #hero-cover
 		min-height 100vh
-@media (max-height: 730px) 
+@media (max-height: 730px)
 	#hero-cover
 		padding 9em 0 1em 0
 // @media (max-height: 600px)
