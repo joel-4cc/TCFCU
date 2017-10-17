@@ -5027,7 +5027,7 @@ pre {
 /*! -- Stack Links -- */
 a {
     color: #57818a;
-    font-weight: 700;
+    /*font-weight: 700;*/
 }
 
     a:hover {
@@ -5057,7 +5057,7 @@ p + a:not(.btn) {
 
 .imagebg:not(.image--light) a {
     color: #fff;
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 /*! -- Stack Tables -- */
 table {

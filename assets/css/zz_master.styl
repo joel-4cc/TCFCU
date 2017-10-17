@@ -38,6 +38,8 @@ p, span, input, select, textarea
 	line-height 1.6em
 input
 	font-size 1em
+a:hover
+	text-decoration none !important
 ::selection
 	background $blue /* WebKit/Blink Browsers */
 	color $white
@@ -93,6 +95,25 @@ section
 			color $green !important
 		&:hover
 			border 4px $green solid !important
+	&.btn-white
+		border 4px $white solid !important
+		span
+			color $white !important
+		&:hover
+			border 4px $white solid !important
+
+.pt--1
+	padding-top 1.85714286em
+.pt--2
+	padding-top 3.71428571em
+.pt--3
+	padding-top 5.57142857em
+.pb--1
+	padding-bottom 1.85714286em
+.pb--2
+	padding-bottom 3.71428571em
+.pb--3
+	padding-bottom 5.57142857em
 
 .col-center
 	float none
@@ -214,12 +235,22 @@ table
 
 
 
-// ---- header
+// ---- Loans
+#loan-nav
+	.loan-type
+		overflow hidden
+		.background-image-holder
+			transition 0.5s ease-in-out
+		&:hover
+			.background-image-holder
+				transition 0.5s ease-in-out
+				transform scale(1.1)
 
 
-
-// ---- footer
-
+// ---- Masonry
+.masonry
+	.masonry__item
+		margin-bottom 0
 
 
 
