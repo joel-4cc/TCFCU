@@ -1,32 +1,38 @@
 extends /layout
 
 block content
-	section#hero-cover.cover.height-50.imagebg.parallax.text-center(data-overlay="5")
+	section.cover.height-30.imagebg.parallax.text-center(data-overlay="5")
 		//- background image
 		div.background-image-holder(style="background-image: url(/img/header/loans-personal.jpg); background-position:center bottom; opacity: 1;") 
 			//-background image for smaller devices
 			img.attachment-full.size-full(width="1600" height="1067" src="/img/header/loans-personal.jpg" alt="" srcset="/img/header/loans-personal.jpg 1600w, /img/header/loans-personal.jpg 300w, /img/header/loans-personal.jpg 768w, /img/header/loans-personal.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px")
 		div#hero-content.container.pos-vertical-center
-			div.row.text-center
+			//-div.row.text-center
 				div.col-sm-12
 					h1 Personal Loans
-			div.vc_empty_space(style="height: 32px")
-				span.vc_empty_space_inner
-	section
+			
+	//-section
 		div.container
 			div.row
 				div.col-md-12.text-center
-					a.btn.btn--primary-2(href="/loans")
+					a.btn.btn-green(href="/loans")
 						i.icon.icon--xs.fa.fa-arrow-left.color--white(style="margin-right:20px;")
 						span.btn__text Back to Loans
+	section.unpad--bottom
+		.container
+			.row
+				.col-sm-12
+					h1.color--blue Personal Loans
 	section
 		div.container
 
-			div.row.margin-bottom-30.text-center
+			div.row
 
 				div.col-md-12
-					h4.color--primary Line of Credit
-					a.btn.btn--primary-2(href="#")
+					h4.color--green Line of Credit
+			div.row.mt--1.mb--1
+				div.col-md-12
+					a.btn.btn-green(href="#")
 						span.btn__text Apply Now
 			
 			div.row
@@ -34,13 +40,15 @@ block content
 					p.
 						With low interest rates, flexible repayment terms and as borrowed funds are repaid each month, they become available to borrow again! One great use of your Line of Credit is for Overdraft Protection for your Checking Account. You can avoid the expense and embarrassment of a bounced check by setting up an Overdraft Line of Credit. If your account is overdrawn, we have free overdraft protection with no minimum dollar amount. Or, when unexpected expenses or emergencies arise, a Line of Credit provides a source of funds when you need it.
 
-			hr
+			.hr-blue-after.mt--3.mb--3
 			
-			div.row.margin-bottom-30.text-center
+			div.row
 
 				div.col-md-12
-					h4.color--primary Secured Loans
-					a.btn.btn--primary-2(href="#")
+					h4.color--green Secured Loans
+			div.row.mt--1.mb--1
+				div.col-md-12
+					a.btn.btn-green(href="#")
 						span.btn__text Apply Now
 			
 			div.row
@@ -49,13 +57,15 @@ block content
 						As a great low-rate loan, you can use your funds that are on deposit in your Tulare Federal Savings Account or Certificate as collateral. We simply add a small percentage to your savings rate, so while you pay off your loan, your Savings or Certificate Account continues to earn dividends.
 
 
-			hr
+			.hr-blue-after.mt--3.mb--3
 
-			div.row.margin-bottom-30.text-center
+			div.row
 
 				div.col-md-12
-					h4.color--primary Signature Loans
-					a.btn.btn--primary-2(href="#")
+					h4.color--green Signature Loans
+			div.row.mt--1.mb--1
+				div.col-md-12
+					a.btn.btn-green(href="#")
 						span.btn__text Apply Now
 			
 			div.row
