@@ -126,7 +126,7 @@ a
 		top 0
 		>li
 			margin 0
-			>span
+			>span, >a
 				padding 25px
 				display block
 			&:not(.separate)::after
@@ -136,6 +136,8 @@ a
 				//color $white
 				>span, >a
 					color $white !important
+	.dropdown__trigger::after
+		display none
 	.dropdown__content
 			padding 0 !important
 			border-radius 0px !important
