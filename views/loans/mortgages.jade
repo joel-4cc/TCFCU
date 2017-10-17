@@ -1,49 +1,47 @@
 extends /layout
 
 block content
-	section#hero-cover.cover.height-50.imagebg.parallax.text-center(data-overlay="5")
+	section.cover.height-30.imagebg.parallax.text-center(data-overlay="5")
 		//- background image
 		div.background-image-holder(style="background-image: url(/img/header/loans-mortgage.jpg); background-position:center bottom; opacity: 1;") 
 			//-background image for smaller devices
 			img.attachment-full.size-full(width="1600" height="1067" src="/img/header/loans-mortgage.jpg" alt="" srcset="/img/header/loans-mortgage.jpg 1600w, /img/header/loans-mortgage.jpg 300w, /img/header/loans-mortgage.jpg 768w, /img/header/loans-mortgage.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px")
 		div#hero-content.container.pos-vertical-center
-			div.row
+			//-div.row
 				div.col-sm-12
 					h1.text-center Mortgages
-			div.vc_empty_space(style="height: 32px")
-				span.vc_empty_space_inner
-	section
+			
+	//-section
 		div.container
 			div.row
 				div.col-md-12.text-center
 					a.btn.btn--primary-2(href="/loans")
 						i.icon.icon--xs.fa.fa-arrow-left.color--white(style="margin-right:20px;")
 						span.btn__text Back to Loans
+	section.unpad--bottom
+		.container
+			.row
+				.col-sm-12
+					h1.color--blue Home Loans
 	section
 		div.container
-
-			div.row.margin-bottom-30
-
-				div.col-md-12.text-center
-					h4.color--primary Mortgage Loans
+			div.row
+				div.col-md-12
+					h4.color--green Mortgage Loans
 
 					p.
 						Count on Tulare Federal to make your home buying dreams a reality. At Tulare Federal, we’ve helped thousands of members realize their dream of home ownership, by partnering up with CUSO Mortgage to offer affordable real estate loans. Our experienced and friendly mortgage professionals are ready to help find the program that is right for you.
 					
-			div.row.margin-top-30.text-center
+			div.row.mt--2.mb--2
 				div.col-md-12
-					a.btn.btn--primary-2(href="#")
+					a.btn.btn-green(href="#")
 						span.btn__text Learn more about mortgage loans
-
-
-			hr
 			
 			div.row.margin-bottom-30
 
 				div.col-md-6
 					
-					p.unmarg.
-						Tulare Federal focuses on the individual needs of our members by offering:
+					h4.color--green Tulare Federal focuses on the individual needs of our members by offering:
 					p.unmarg.
 						• Pre-approvals
 					p.unmarg.
@@ -54,8 +52,7 @@ block content
 						• Online application status and rate tracking
 				
 				div.col-md-6
-					p.unmarg.
-						Tulare Federal offers various types of mortgages to fit your lifestyle:
+					h4.color--green Tulare Federal offers various types of mortgages to fit your lifestyle:
 					p.unmarg.
 						• Traditional fixed-rate mortgages (15, 20, 30 year)
 					p.unmarg.
@@ -65,26 +62,29 @@ block content
 					p.unmarg.
 						• Rental property
 			
-
-			div.row.margin-bottom-30.text-center
+			div.row.text-center.mt--2.mb--2
 				div.col-md-6
-					a.btn.btn--primary-2(href="#")
+					a.btn.btn-green(href="#")
 						span.btn__text Compare Plans
 
 				div.col-md-6
-					a.btn.btn--primary-2(href="#")
+					a.btn.btn-green(href="#")
 						span.btn__text Apply Now
 
-			hr
+			.hr-blue-after.mt--3.mb--3
 
-			div.row.margin-bottom-30.text-center
+			div.row
 				div.col-md-12
-					h4.color--primary.text-center Fixed Rate/Term Home Equity
-					a.btn.btn--primary-2(href="#")
+					h4.color--green Fixed Rate/Term Home Equity
+			div.row.mt--1.mb--1
+				div.col-md-12
+					a.btn.btn-green(href="#")
 						span.btn__text Apply Now
+			div.row
+				div.col-md-12
 					p.
 						If you are looking for a fixed amount to be repaid over a specific time period with a fixed interest rate, consider a Second Mortgage.
-			div.row
+			div.row.mt--2.mb--2
 				div.col-md-6
 					p.unmarg.
 						• Equal monthly payments
@@ -93,23 +93,24 @@ block content
 					p.unmarg.
 						• Terms up to 15 years, based on amount financed
 				div.col-md-6
-					p.
-						Tulare Federal offers various types of mortgages to fit your lifestyle:
+					h4.color--green Tulare Federal offers various types of mortgages to fit your lifestyle:
 					p.unmarg.
-						Traditional fixed rate mortgages (15, 20, 30 year)
+						• Traditional fixed rate mortgages (15, 20, 30 year)
 					p.unmarg.
-						Adjustable rate mortgages (ARMs)
+						• Adjustable rate mortgages (ARMs)
 					p.unmarg.
-						FHA loans
+						• FHA loans
 					p.unmarg.
-						Rental property
+						• Rental property
 
-			hr
+			.hr-blue-after.mt--3.mb--3
 
-			div.row.margin-bottom-30.text-center
+			div.row
 				div.col-md-12
-					h4.color--primary.text-center Home Equity Line of Credit (HELOC)
-					a.btn.btn--primary-2(href="#")
+					h4.color--green Home Equity Line of Credit (HELOC)
+			div.row.mt--1.mb--1
+				div.col-md-12
+					a.btn.btn-green(href="#")
 						span.btn__text Apply Now
 					
 			div.row
@@ -132,17 +133,19 @@ block content
 						• Payments based on the balance used
 					p.
 						• Borrow up to 90% of the market value on your primary residence
-			div.row.text-center
+			div.row.mt--1.mb--1
 				div.col-md-12
-					a.btn.btn--primary-2.margin-bottom-30(href="#")
+					a.btn.btn-green(href="#")
 						span.btn__text Disclosure
 
-			hr
+			.hr-blue-after.mt--3.mb--3
 
-			div.row.margin-bottom-30.text-center
+			div.row
 				div.col-md-12
-					h4.color--primary.text-center Home Equity Programs
-					a.btn.btn--primary-2(href="#")
+					h4.color--green Home Equity Programs
+			div.row.mt--1.mb--1
+				div.col-md-12
+					a.btn.btn-green(href="#")
 						span.btn__text Apply Now
 
 			div.row
@@ -158,13 +161,13 @@ block content
 					p.unmarg.
 						• Bill Consolidation
 
-			div.row.margin-bottom-30.text-center
+			div.row.mt--2
 				div.col-md-12
 					p.
 						*Please consult your tax advisor about your particular situation.
 					p.
 						**Subject to credit union approval of equity requirements.
-					a.btn.btn--primary-2.margin-bottom-30(href="#")
+					a.btn.btn-green(href="#")
 						span.btn__text Learn More
 
 
