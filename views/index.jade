@@ -12,13 +12,11 @@ block content
 		div#home-hero-content.container.pos-vertical-center
 			div.row
 				div.col-sm-12
-					h1.text-left.hr-green= contentful.Home[0].headerText
+					h1.text-left.hr-green-after= contentful.Home[0].headerText
 						//-div.wpb_single_image.wpb_content_element.vc_align_center
 						//-figure.wpb_wrapper.vc_figure
 							div.vc_single_image-wrapper.vc_box_border_grey
 								img.vc_single_image-img.attachment-full(width="1634" height="448" src="/img/stack/headline-1.png" alt="" srcset="/img/stack/headline-1.png 1634w, /img/stack/headline-1.png 300w, /img/stack/headline-1.png 768w, /img/headline-1.png 1024w" sizes="(max-width: 1634px) 100vw, 1634px")
-			div.vc_empty_space(style="height: 32px")
-				span.vc_empty_space_inner
 			div.wpb_text_column.wpb_content_element
 				div.wpb_wrapper
 					h5.text-left= contentful.Home[0].headerSubtext
@@ -48,57 +46,77 @@ block content
 									p= alert.content
 									//-p #{alert.dateFrom} - #{alert.dateTo}
 								div.alert__close ×
-	section.bg--gray
+	section
 		.container
 			.row
-				.col-sm-4
+				//-.col-sm-4
 					img(src="img/icons/piggybank.png" alt="piggy bank")
+				.col-sm-12
+					h3.hr-blue-after.color--blue A simple start to dreaming big
+			.row
 				.col-sm-8
-					h3.hr-blue-before How We Save
 					p.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit lorem, ornare ut sem in, pharetra placerat massa. Etiam facilisis nisi nec imperdiet suscipit. Cras malesuada leo non ligula tincidunt, sed tristique eros ultricies. Fusce faucibus neque ac dui tempus, et egestas lectus mattis. Praesent a quam mattis, maximus neque sit amet, faucibus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ultrices a purus a pharetra. Morbi fermentum lobortis ex, vel ullamcorper risus tristique vitae. Nulla ornare elit sit amet mauris ultrices, nec ultricies dolor consequat. Suspendisse vel hendrerit erat. Quisque semper sem a odio vestibulum aliquam. In ut facilisis diam, sed fermentum enim. Aliquam posuere leo at dignissim cursus.
+						As a customer, you’re everything to us. So we’ve built a new kind of bank for you and the way you live now. Amazing new technology. Products and services that feel effortless. And smart people to help you meet your goals. TFED is more than a bank, it’s a state of mind.
 
-					a.btn.btn-blue(href="/loans") 
+					//-a.btn.btn-blue(href="/loans") 
 						span.btn__text Loans
 
+	section
+		.container
+			.row
+				.col-sm-6
+					iframe(src="https://www.youtube.com/embed/ZG690A8XPKM")
+				.col-sm-6
+					h3.hr-green-after.color--green Our Story
+					p.
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+	
 	section#our-services
 		.container
 			.row
-				.col-sm-6.mb--3
-					h3.hr-blue-before Our Services
+				.col-sm-12.mb--3
+					h3.color--blue.hr-blue-after Banking Made Easy
 			.row
-				.col-sm-3.col-xs-6.inline-block-xs
-					img.block(src="img/icons/moneygraph.png")
-					h6.text-center Budgeting Tools
-				.col-sm-3.col-xs-6.inline-block-xs
-					img.block(src="img/icons/car.png")
-					h6.text-center Car Loans
-				.col-sm-3.col-xs-6.inline-block-xs
-					img.block(src="img/icons/moneybag2.png")
-					h6.text-center Refinancing
-				.col-sm-3.col-xs-6.inline-block-xs
-					img.block(src="img/icons/moneygrow2.png")
-					h6.text-center Small Business Loans
+				a(href='#')
+					.col-sm-3.col-xs-6.inline-block-xs
+						img.block(src="img/icons/icon-1.png")
+						h6.text-center Checking
+				a(href='#')
+					.col-sm-3.col-xs-6.inline-block-xs
+						img.block(src="img/icons/icon-2.png")
+						h6.text-center Savings
+				a(href='#')
+					.col-sm-3.col-xs-6.inline-block-xs
+						img.block(src="img/icons/icon-3.png")
+						h6.text-center Management
+				a(href='#')
+					.col-sm-3.col-xs-6.inline-block-xs
+						img.block(src="img/icons/icon-4.png")
+						h6.text-center Loans
 
+
+	section#full-width-ads.unpad--bottom
+		.row.text-center
+			a(href='#')
+				.col-sm-6.imagebg.height-40(data-overlay="5")
+					.background-image-holder
+						img(src="/img/test3.jpg")
+					.container.pos-vertical-center
+						h3 Low Auto Rates
+			a(href='#')
+				.col-sm-6.imagebg.height-40(data-overlay="5")
+					.background-image-holder
+						img(src="/img/test2.jpg")
+					.container.pos-vertical-center
+						h3 Holiday Skip-A-Pay
+				
 			
-				.col-sm-3.col-xs-6.inline-block-xs
-					img.block(src="img/icons/money2.png")
-					h6.text-center Quick Deposits
-				.col-sm-3.col-xs-6.inline-block-xs
-					img.block(src="img/icons/piggybank.png")
-					h6.text-center Savings Accounts
-				.col-sm-3.col-xs-6.inline-block-xs
-					img.block(src="img/icons/bank.png")
-					h6.text-center Personalized Banking
-				.col-sm-3.col-xs-6.inline-block-xs
-					img.block(src="img/icons/money.png")
-					h6.text-center Mobile Banking
-
-	section#become-a-member
+	
+	//-section#become-a-member
 		.container
 			.row.pos-relative
 				.col-sm-6
-					h3.hr-green-before Hear How We Make Finances Simple
+					h3 Hear How We Make Finances Simple
 					p.
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit lorem, ornare ut sem in, pharetra placerat massa. Etiam facilisis nisi nec imperdiet suscipit. Cras malesuada leo non ligula tincidunt, sed tristique eros ultricies. Fusce faucibus neque ac dui tempus, et egestas lectus mattis. Praesent a quam mattis, maximus neque sit amet, faucibus turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ultrices a purus a pharetra. Morbi fermentum lobortis ex, vel ullamcorper risus tristique vitae. Nulla ornare elit sit amet mauris ultrices, nec ultricies dolor consequat. Suspendisse vel hendrerit erat. Quisque semper sem a odio vestibulum aliquam. In ut facilisis diam, sed fermentum enim. Aliquam posuere leo at dignissim cursus.
 
