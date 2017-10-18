@@ -5298,8 +5298,8 @@ hr[data-title] {
         }
 
     .btn:hover {
-        transform: translate3d(0, -2px, 0);
-        -webkit-transform: translate3d(0, -2px, 0);
+        /*transform: translate3d(0, -2px, 0);
+        -webkit-transform: translate3d(0, -2px, 0);*/
     }
 
     .btn.btn--sm + .btn--sm {
