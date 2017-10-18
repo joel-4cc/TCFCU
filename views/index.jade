@@ -4,12 +4,12 @@ extends /layout
 block content
 	- var blogPosts = 3;
 	//- Main Hero Header
-	section#home-hero.cover.height-80.imagebg.parallax.text-center.overlay-blue(data-overlay="5")
+	section#home-hero.cover.height-80.imagebg.parallax.overlay-blue(data-overlay="5")
 		//- background image
 		div.background-image-holder(style="background: url(/img/header/home.jpg); opacity: 1;") 
 			//-background image for smaller devices
 			img.attachment-full.size-full(width="1600" height="1067" src="/img/header/home.jpg" alt="" srcset="/img/header/home.jpg 1600w, /img/header/home.jpg 300w, /img/header/home.jpg 768w, /img/header/home.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px")
-		div#home-hero-content.container.pos-vertical-center
+		div.container.pos-vertical-center
 			div.row
 				div.col-sm-12
 					h1.hr-green-after.text-left COMING HOME IS A DREAM WE MAKE COME TRUE
@@ -101,13 +101,13 @@ block content
 				.col-sm-6.imagebg.height-40.overlay-green(data-overlay="5")
 					.background-image-holder
 						img(src="/img/test3.jpg")
-					.container.pos-vertical-center
+					.pos-vertical-center
 						h3 Low Auto Rates
 			a(href='#')
 				.col-sm-6.imagebg.height-40.overlay-blue(data-overlay="5")
 					.background-image-holder
 						img(src="/img/test2.jpg")
-					.container.pos-vertical-center
+					.pos-vertical-center
 						h3 Holiday Skip-A-Pay
 				
 			
