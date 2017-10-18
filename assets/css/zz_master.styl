@@ -9,13 +9,14 @@ h1, h2, h3, h4, h5, h6, span, .h1, .h2, .h3, .h4, .h5, .h6
 	font-weight bold
 	margin-bottom 10px
 
+
 p
 	font-family $openSans
 	color $gray
 	font-size 0.8em
 input
 	font-size 0.8em
-::selection 
+::selection
 	background $navy /* WebKit/Blink Browsers */
 	color #fff
 
@@ -23,7 +24,7 @@ input
 	background: $navy /* Gecko Browsers */
 	color #fff
 
-  
+
 
 
 // ---- misc
@@ -50,11 +51,11 @@ input
 	background-size cover
 	background-repeat no-repeat
 	background-position center center
-.icon 
+.icon
 	margin 20px auto
 .tabs li.active .tab__title span
 	color $navy
-	
+
 .margin-bottom-30
 	margin-bottom 30px
 .margin-top-30
@@ -63,9 +64,9 @@ input
 a.btn
 	width auto
 	text-align center
-	margin 20px auto 
+	margin 20px auto
 
-hr 
+hr
 	margin 5em auto
 	border-color rgba(87, 129, 138,0.4)
 	//opacity 0.4
@@ -73,7 +74,7 @@ hr
 .center-column
 	margin 0 auto !important
 	float none !important
-	
+
 
 .map-container
 	min-height 500px
@@ -82,7 +83,7 @@ ul.tabs
 	border none
 	text-align center
 	width 100%
-	
+
 //#hero-cover
 
 // ---- Tables
@@ -92,14 +93,14 @@ table
 	text-align center
 	thead
 		tr
-			th 
+			th
 				text-align center
 				background-color $navy
 				color #fff
 	tbody
 		tr:nth-child(even)
 			background-color rgba(0,0,0,.04) !important
-		
+
 
 
 // ---- header
@@ -111,17 +112,17 @@ table
 	width 100%
 	border-bottom 0.5px rgba(255,255,255,0.4) solid
 	//height 120px
-	
+
 	#menu1
 		padding 0
-		
+
 		.bar__module
 			a
 				height inherit
 				display block
 		.menu-horizontal
 			top 0
-			font-size 16px			
+			font-size 16px
 			a
 				color $navy !important
 				padding 20px 10px
@@ -161,13 +162,13 @@ table
 		height 300px !important
 	li
 		list-style-type none
-		
+
 
 
 // ---- Home page
 #home-hero, #hero-cover
 	min-height 80vh
-.hamburger-toggle > i	
+.hamburger-toggle > i
 	color $navy
 	//line-height 100px
 
@@ -197,7 +198,7 @@ table
 		margin 0 auto
 	#menu1
 		//background $navy
-		
+
 		.float-right
 			float none
 		.menu-horizontal a
@@ -210,10 +211,10 @@ table
 			padding 25px;
 	div[class*='col-']:not([class*='-12'])
 		margin-top 30px
-		
+
 	h1, h2, h3, h4, h5, h6
 		text-align center
-		
+
 	img
 		margin 0 auto
 		display block
@@ -224,7 +225,7 @@ table
 
 @media (max-width:768px) //mobile
 	.logo.logo-light
-		max-height 100px	
+		max-height 100px
 		margin-bottom 20px !important
 		max-width 90%
 	#home-hero-content
@@ -232,7 +233,7 @@ table
 	#home-login
 		input
 			margin 0 0 20px 0
-	#header 
+	#header
 		//height 100px
 		.bar
 			padding 0
@@ -247,10 +248,10 @@ table
 		top 0px
 		width 100%
 
-@media (max-height: 900px) 
+@media (max-height: 900px)
 	#home-hero, #hero-cover
 		min-height 100vh
-@media (max-height: 730px) 
+@media (max-height: 730px)
 	#hero-cover
 		padding 9em 0 1em 0
 @media (max-height: 600px)
