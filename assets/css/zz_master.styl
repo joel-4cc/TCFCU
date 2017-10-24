@@ -27,8 +27,9 @@ h4
 h5
 	font-size 2.5em
 	font-weight 600
+	line-height 1.0em
 h6
-	font-size 2em
+	font-size 1.5em
 
 
 
@@ -75,17 +76,23 @@ a:hover
 
 // ---- misc
 section
-	padding 75px 0
+	padding-top 50px
+	padding-bottom 40px
+
 .btn
 	border-radius 999px
 	span
 		font-size 1em !important
 		text-transform uppercase
 		letter-spacing 2px
+		font-family $futura
+		font-weight	600
 
 	&.btn-blue
 		border 4px $white solid !important
 		background $blue !important
+		margin-top	25px
+		margin-bottom 25px
 		span
 			color $white !important
 		&:hover
@@ -407,3 +414,9 @@ table
 // @media (max-height: 600px)
 // 	#home-hero-content
 // 		top 95px
+.mt--2
+	margin-top	.5em
+.final
+	margin-bottom 5em !important
+.mt--1
+	margin-top	3.5em
