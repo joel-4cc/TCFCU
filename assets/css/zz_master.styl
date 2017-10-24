@@ -22,12 +22,16 @@ h2
 	font-weight 500
 h3
 	font-size 4em
+	font-weight	500
 h4
 	font-size 3em
 h5
 	font-size 2.5em
 	font-weight 600
 	line-height 1.0em
+h5#footer
+	font-size 2.0em
+
 h6
 	font-size 1.5em
 
@@ -80,7 +84,7 @@ section
 	padding-bottom 40px
 
 .btn
-	border-radius 999px
+	//border-radius 999px
 	span
 		font-size 1em !important
 		text-transform uppercase
@@ -112,15 +116,15 @@ section
 			span
 				color $green !important
 	&.btn-white
-		background $white
-		border 4px $transparent solid !important
+		background $transparent
+		border 2px $white solid !important
 		span
-			color $blue !important
+			color $white !important
 		&:hover
-			background $transparent
-			border 4px $white solid !important
+			background $white
+			border 2px $white solid !important
 			span
-				color $white !important
+				color $blue !important
 	// &.btn-blue
 	// 	border 4px $blue solid !important
 	// 	span
@@ -255,7 +259,9 @@ a
 		img
 			padding 0 35px
 
-
+#home-landing
+	.container
+		padding-top 100px
 
 
 
