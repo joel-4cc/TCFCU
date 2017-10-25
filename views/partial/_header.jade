@@ -1,6 +1,6 @@
 #menu2.nav-container
 	.bar.bar--sm.visible-xs
-		.container
+		.container.header
 			.row(style="position:relative;")
 				.float-left
 					a(href='/')
@@ -11,7 +11,7 @@
 						i.icon.icon--sm.stack-interface.stack-menu
 			
 	nav#menu1.bar.bar--sm.bar-1.hidden-xs
-		.container
+		.container.header
 			.row(style="position:relative;")
 				.float-left.hidden-sm.hidden-xs
 					.bar__module
@@ -28,7 +28,7 @@
 					.bar__module
 						ul.menu-horizontal.text-left.text-center-xs
 							li.dropdown
-								span.dropdown__trigger Products
+								span.dropdown__trigger Services
 								.dropdown__container.megamenu
 									.container
 										.row
@@ -46,10 +46,10 @@
 													h6.megamenu-subhead.hr-blue-after Bank
 													ul.menu-vertical
 														li
-															a(href='/spend')
-																| Spend
+															a(href='/checking')
+																| Checking
 														li
-															a(href='/save')
+															a(href='/savings')
 																| Save
 														li
 															a(href='/digital-banking')
