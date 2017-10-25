@@ -46,8 +46,8 @@ block content
 									p= alert.content
 									//-p #{alert.dateFrom} - #{alert.dateTo}
 								div.alert__close ×
-	section
-		.container#home-landing
+	section#home-landing
+		.container
 			.row.text-center
 				//-.col-sm-4
 					img(src="img/icons/piggybank.png" alt="piggy bank")
@@ -88,47 +88,71 @@ block content
 			.row
 				a(href='/spend')
 					.col-sm-3.col-xs-6.inline-block-xs
-						img.block(src="img/icons/icon-1.png")
+						img.block(src="img/icons/checking-icon.png")
 						h6.text-center CHECKING
 				a(href='/save')
 					.col-sm-3.col-xs-6.inline-block-xs
-						img.block(src="img/icons/icon-2.png")
+						img.block(src="img/icons/savings-icon.png")
 						h6.text-center SAVINGS
-				a(href='#')
+				a(href='/loans/credit-cards')
 					.col-sm-3.col-xs-6.inline-block-xs
-						img.block(src="img/icons/icon-3.png")
-						h6.text-center MANAGEMENT
-				a(href='#')
+						img.block(src="img/icons/credit-card-icon.png")
+						h6.text-center CREDIT CARD
+				a(href='/loans/auto-loans')
 					.col-sm-3.col-xs-6.inline-block-xs
-						img.block(src="img/icons/icon-4.png")
-						h6.text-center LOANS
+						img.block(src="img/icons/auto-loan-icon.png")
+						h6.text-center AUTO LOANS
 		.container
 			.row
 				a(href='#')
 					.col-sm-3.col-xs-6.inline-block-xs
-						img.block(src="img/icons/icon-1.png")
-						h6.text-center CHECKING
+						img.block(src="img/icons/home-loan-icon.png")
+						h6.text-center CALCULATOR
+				a(href='/digital-banking')
+					.col-sm-3.col-xs-6.inline-block-xs
+						img.block(src="img/icons/digital-banking-icon.png")
+						h6.text-center DIGITAL BANKING
 				a(href='#')
 					.col-sm-3.col-xs-6.inline-block-xs
-						img.block(src="img/icons/icon-2.png")
-						h6.text-center SAVINGS
+						img.block(src="img/icons/mortgage-icon.png")
+						h6.text-center MORTGAGE
 				a(href='#')
 					.col-sm-3.col-xs-6.inline-block-xs
-						img.block(src="img/icons/icon-3.png")
-						h6.text-center MANAGEMENT
-				a(href='#')
-					.col-sm-3.col-xs-6.inline-block-xs
-						img.block(src="img/icons/icon-4.png")
-						h6.text-center LOANS
+						img.block(src="img/icons/budget-tool-icon.png")
+						h6.text-center BUDGETING TOOL
 
 
 	section#full-width-ads.unpad--bottom
 		.row.text-center
-			a(href='#')
 				.col-sm-12.imagebg.height-60.overlay-green(data-overlay="5")
 					.background-image-holder
 						img(src="/img/phs.jpg")
 					.pos-vertical-center
+						h3 Our Vision for the Future
+						p.large.
+							We built the first on campus / student-run credit union branch on a high school campus in Tulare County. <br/> 
+							This is our commitment to the next generation of Valley leaders.
+						a.btn.btn-white(href="#")
+							span.btn__text Learn More
+							
+	section#home-landing
+		.container
+			row.text-center
+				.col-sm-12.mb--3
+					h3.home.color--grey See what everyone's talking about
+	section
+		.container
+			row.text-center
+				.col-sm-12.mb--3
+					h3.color--green	"Snazzy quote from a member goes here"
+					
+							
+	//-section#home-hero.cover.height-40.imagebg.parallax.overlay-green(data-overlay="5")
+		div.background-image-holder(style="background: url(/img/phs.jpg); opacity: 1;") 
+			img.attachment-full.size-full(width="1920" height="1280" src="/img/phs.jpg" alt="" srcset="/img/header/home.jpg 1600w, /img/header/home.jpg 300w, /img/header/home.jpg 768w, /img/header/home.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px")
+		div.container.pos-vertical-center
+			div.row
+				div.col-sm-12
 						h3 Our Vision for the Future
 						p.
 							We built the first on campus / student-run credit union branch on a high school campus in Tulare County. This is our commitment to the next generation of Valley leaders.
