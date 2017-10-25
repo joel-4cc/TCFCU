@@ -88,7 +88,7 @@ section#footer
 	padding-top 100px
 
 .btn
-	//border-radius 999px
+	border-radius 0px
 	span
 		font-size 1em !important
 		text-transform uppercase
@@ -97,7 +97,7 @@ section#footer
 		font-weight	600
 
 	&.btn-blue
-		border 4px $white solid !important
+		border 4px $blue solid !important
 		background $blue !important
 		margin-top	25px
 		margin-bottom 25px
@@ -193,15 +193,19 @@ a
 // ---- header
 
 #menu1
-
+	font-family	$futura
+	text-transform	none
 	padding 0px
 	.menu-horizontal
 		top 0
 		>li
 			margin 0
 			>span, >a
-				padding 25px
+				padding 40px
 				display block
+				text-transform	none
+				color #58595b
+				font-size	1.2em
 			&:not(.separate)::after
 				padding 10px 0 0 0
 			&:hover
@@ -232,7 +236,7 @@ a
 					>span, >a
 						color $white !important
 	.logo
-		max-height 100% !important
+		max-height 75% !important
 		top 0
 		bottom 0
 		margin auto
@@ -245,11 +249,14 @@ a
 #menu2
 	padding 0 25px
 	.logo
-		max-height 100% !important
+		max-height 75% !important
 		top 0
 		bottom 0
 		margin auto
 		position absolute
+
+.menu-horizontal > li, .menu-vertical > li
+	font-family	$futura
 
 
 
@@ -266,6 +273,8 @@ a
 section#home-landing
 	padding-top 100px
 
+section#our-services
+	padding-top 100px
 
 
 
