@@ -3,6 +3,9 @@
 //normalize-css()
 //base()
 
+body
+	padding-top 100px //for the sticky header
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 	font-family $futura
 	color $gray
@@ -199,6 +202,21 @@ a
 .overlay-blue[data-overlay]:before
 	background $blue
 // ---- header
+#menu2
+	position fixed
+	top 0
+	left 0
+	background $white
+	z-index 99
+	padding 0 0 0 50px
+	width 100%
+	height 100px
+	.logo
+		max-height 75% !important
+		top 0
+		bottom 0
+		margin auto
+		position absolute
 
 #menu1
 	font-family	$futura
@@ -209,7 +227,8 @@ a
 		>li
 			margin 0
 			>span, >a
-				padding 40px
+				line-height 100px
+				padding 0px 35px
 				display block
 				text-transform	none
 				color #58595b
@@ -255,21 +274,13 @@ a
 			padding 0px !important
 		div[class*='col-']
 			padding 25px 10px
-#menu2
-	padding 0 0	0	50px
-	.logo
-		max-height 75% !important
-		top 0
-		bottom 0
-		margin auto
-		position absolute
 
 .menu-horizontal > li, .menu-vertical > li
-	font-family	$futura
+	font-family $futura
 
 
 .container.header
-	width	100%
+	width 100%
 
 
 // ---- Home page
@@ -285,10 +296,10 @@ section#home-landing
 
 section#our-services
 	padding-top 150px
-	padding-bottom	150px
+	padding-bottom 150px
 
 section#map
-	padding-bottom	0px
+	padding-bottom 0px
 
 // ---- Tables
 
@@ -471,15 +482,15 @@ h3.home
 	margin-right	0px
 	float	right
 	img {
-	    max-width 300px
-	    margin-bottom 0px
+		max-width 300px
+		margin-bottom 0px
 	}
 
 .row.mt--3.footer
-	margin-bottom	4.0em
-	margin-top	1.2em
+	margin-bottom 4.0em
+	margin-top 1.2em
 
 p.smaller.footer
-	font-size	1.3em
+	font-size 1.3em
 p.smallest.footer
-	font-size	.9em
+	font-size .9em
